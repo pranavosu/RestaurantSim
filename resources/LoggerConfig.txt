@@ -1,0 +1,17 @@
+# Set root logger level to DEBUG and its only appender to A1.
+log4j.rootLogger=DEBUG, stdout, flogger
+#log4j.rootLogger=OFF
+
+# stdout is set to be a ConsoleAppender.
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.flogger=org.apache.log4j.FileAppender
+
+# stdout uses PatternLayout.
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern=%-4r [%t] %-5p %c %x - %m%n
+log4j.appender.flogger.layout=org.apache.log4j.PatternLayout
+log4j.appender.flogger.layout.ConversionPattern=%-4r [%t] %-5p %c %x - %m%n
+log4j.appender.flogger.File=console.log
+log4j.appender.flogger.Append=false
+
+
