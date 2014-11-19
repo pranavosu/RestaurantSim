@@ -24,35 +24,39 @@ public class SimulationEngine {
 		
 		initLogger();
 		
-		BufferedReader reader;
-		try {
-			
-			
-			reader = new BufferedReader(new FileReader(args[0]));
+//		BufferedReader reader;
+//		try {
+//			
+//			
+//			reader = new BufferedReader(new FileReader(args[0]));
+//		
+//			String line = reader.readLine();
+//			int numberOfDiners = Integer.parseInt(line.trim());
+//			
+//			line = reader.readLine();
+//			int numberOfTables = Integer.parseInt(line.trim());
+//			
+//			line = reader.readLine();
+//			int numberOfCooks = Integer.parseInt(line.trim());
+//			
+//			
+//			Restaurant restaurant = new Restaurant(10,10,20);
+//			
+//			restaurant.open();
+//			
+//			
+//			
+//		} catch (FileNotFoundException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		
-			String line = reader.readLine();
-			int numberOfDiners = Integer.parseInt(line.trim());
-			
-			line = reader.readLine();
-			int numberOfTables = Integer.parseInt(line.trim());
-			
-			line = reader.readLine();
-			int numberOfCooks = Integer.parseInt(line.trim());
-			
-			
-			Restaurant restaurant = new Restaurant();
-			
-			
-			
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Restaurant restaurant = new Restaurant(10,10,20);
 		
-		
+		restaurant.open();
 			
 	}
 

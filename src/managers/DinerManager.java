@@ -10,6 +10,7 @@ import threads.Diner;
 public class DinerManager {
 
 	private ArrayList<Diner> diners = new ArrayList<Diner>();
+	private int numDinersInRestaurant;
 	
 	public static final Logger logger = Logger.getLogger(DinerManager.class);
 
@@ -18,9 +19,20 @@ public class DinerManager {
         static final DinerManager instance = new DinerManager();
     }
 	
+	public void init(int numDiners){
+		numDinersInRestaurant = numDiners;
+	}
+	
+	
 	public static DinerManager getInstance() {
 		
 		return SingletonHolder.instance;
+		
+	}
+	
+	public boolean isRestaurantEmpty(){
+		
+		return numDinersInRestaurant == 0;
 		
 	}
 	

@@ -15,7 +15,6 @@ public class Diner implements Runnable{
 	public static final Logger logger = Logger.getLogger(Diner.class);
 	
 	public Diner(int id, int arrivalTime, int seatingTime, Order order) {
-		// TODO Auto-generated constructor stub
 		
 		this.arrivalTime = arrivalTime;
 		this.seatingTime = seatingTime;
