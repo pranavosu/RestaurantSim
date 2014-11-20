@@ -13,8 +13,7 @@ public class CokeMachine extends Machine {
 	}
 
 	@Override
-	public
-	Order fulfil(Order o) {
+	public Order fulfil(Order o) {
 		
 		for (int i = 0; i < o.getCokeCount(); i++) {
 			try {
@@ -33,10 +32,7 @@ public class CokeMachine extends Machine {
 	}
 
 	@Override
-	public
-	void setAvailable(boolean available) {
-		// TODO Auto-generated method stub
-		
+	public void setAvailable(boolean available) {
 		isAvailable = available;
 	}
 

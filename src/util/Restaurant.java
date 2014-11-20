@@ -16,7 +16,7 @@ public class Restaurant {
 	
 	private TableManager tableMgr;
 	private DinerManager dinerMgr;
-	private MachineManager manager;
+	private MachineManager machineMgr;
 	private CookManager cookMgr;
 	
 	private Clock clock;
@@ -33,10 +33,9 @@ public class Restaurant {
 		
 		cookMgr = CookManager.getInstance();
 		cookMgr.init(numCooks);
-		
 
-		 manager = MachineManager.getInstance();
-		 manager.init();
+		machineMgr = MachineManager.getInstance();
+		machineMgr.init();
 		
 		clock = Clock.getInstance();
 		

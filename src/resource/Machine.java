@@ -11,10 +11,9 @@ public abstract class Machine {
 	public abstract boolean isAvailable();
 	public abstract void setAvailable(boolean available);
 	
-	public abstract Order fulfil(Order o);
+	public abstract Order fulfil(Order order);
 	
 	public Machine() {
-		// TODO Auto-generated constructor stub
 		
 		isAvailable = true;
 		

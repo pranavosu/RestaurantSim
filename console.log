@@ -1,43 +1,43 @@
 0    [main] INFO  util.SimulationEngine  - Logger initialized
-1021 [Table  #1] INFO  threads.Diner  - Diner #1 arrived at:20 seated at Table  #1
-1022 [Table  #1] INFO  threads.Diner  - Diner #1 is waiting for food.
+1025 [Table  #1] INFO  threads.Diner  - Diner #1 arrived at:20 seated at Table  #1
+1026 [Table  #1] INFO  threads.Diner  - Diner #1 is waiting for food.
 1523 [Table  #2] INFO  threads.Diner  - Diner #2 arrived at:30 seated at Table  #2
-1524 [Table  #2] INFO  threads.Diner  - Diner #2 is waiting for food.
-1570 [Table  #3] INFO  threads.Diner  - Diner #3 arrived at:31 seated at Table  #3
-1570 [Table  #3] INFO  threads.Diner  - Diner #3 is waiting for food.
+1523 [Table  #2] INFO  threads.Diner  - Diner #2 is waiting for food.
+1573 [Table  #3] INFO  threads.Diner  - Diner #3 arrived at:31 seated at Table  #3
+1573 [Table  #3] INFO  threads.Diner  - Diner #3 is waiting for food.
 1622 [Table  #4] INFO  threads.Diner  - Diner #4 arrived at:32 seated at Table  #4
-1623 [Table  #4] INFO  threads.Diner  - Diner #4 is waiting for food.
-1933 [Table  #2] INFO  threads.Diner  - Diner #2 is eating.
-2578 [Table  #1] INFO  threads.Diner  - Diner #1 is eating.
-2629 [Table  #3] INFO  threads.Diner  - Diner #3 is eating.
-3143 [Table  #4] INFO  threads.Diner  - Diner #4 is eating.
-3433 [Table  #2] INFO  threads.Diner  - Table  #2 done at:3050
-3434 [Table  #2] INFO  threads.Diner  - Diner #5 arrived at:33 seated at Table  #2
-3434 [Table  #2] INFO  threads.Diner  - Diner #5 is waiting for food.
-4079 [Table  #1] INFO  threads.Diner  - Table  #1 done at:2050
-4079 [Table  #1] INFO  threads.Diner  - Diner #6 arrived at:60 seated at Table  #1
-4079 [Table  #1] INFO  threads.Diner  - Diner #6 is waiting for food.
-4096 [Table  #2] INFO  threads.Diner  - Diner #5 is eating.
-4129 [Table  #3] INFO  threads.Diner  - Table  #3 done at:3150
-4130 [Table  #3] INFO  threads.Diner  - Diner #7 arrived at:70 seated at Table  #3
-4130 [Table  #3] INFO  threads.Diner  - Diner #7 is waiting for food.
-4639 [Table  #1] INFO  threads.Diner  - Diner #6 is eating.
-4645 [Table  #4] INFO  threads.Diner  - Table  #4 done at:3250
-4645 [Table  #4] INFO  threads.Diner  - Diner #8 arrived at:71 seated at Table  #4
-4646 [Table  #4] INFO  threads.Diner  - Diner #8 is waiting for food.
-5598 [Table  #2] INFO  threads.Diner  - Table  #2 done at:3350
-5598 [Table  #2] INFO  threads.Diner  - Diner #9 arrived at:72 seated at Table  #2
-5599 [Table  #2] INFO  threads.Diner  - Diner #9 is waiting for food.
-5748 [Table  #3] INFO  threads.Diner  - Diner #7 is eating.
-6142 [Table  #1] INFO  threads.Diner  - Table  #1 done at:6050
-6142 [Table  #1] INFO  threads.Diner  - Diner #10 arrived at:73 seated at Table  #1
-6143 [Table  #1] INFO  threads.Diner  - Diner #10 is waiting for food.
-6154 [Table  #4] INFO  threads.Diner  - Diner #8 is eating.
-6703 [Table  #2] INFO  threads.Diner  - Diner #9 is eating.
-7250 [Table  #3] INFO  threads.Diner  - Table  #3 done at:7050
-7262 [Table  #1] INFO  threads.Diner  - Diner #10 is eating.
-7656 [Table  #4] INFO  threads.Diner  - Table  #4 done at:7150
-8206 [Table  #2] INFO  threads.Diner  - Table  #2 done at:7250
-8767 [Table  #1] INFO  threads.Diner  - Table  #1 done at:7350
-8767 [Table  #1] INFO  managers.DinerManager  - Last diner leaves
-8767 [Table  #1] INFO  util.Restaurant  - Restaurant Closed
+1622 [Table  #4] INFO  threads.Diner  - Diner #4 is waiting for food.
+1944 [Table  #2] INFO  threads.Diner  - Diner #2 is eating.
+2613 [Table  #1] INFO  threads.Diner  - Diner #1 is eating.
+2668 [Table  #3] INFO  threads.Diner  - Diner #3 is eating.
+3164 [Table  #4] INFO  threads.Diner  - Diner #4 is eating.
+3446 [Table  #2] INFO  threads.Diner  - Table  #2 done at:3050
+3447 [Table  #2] INFO  threads.Diner  - Diner #5 arrived at:33 seated at Table  #2
+3447 [Table  #2] INFO  threads.Diner  - Diner #5 is waiting for food.
+4105 [Table  #2] INFO  threads.Diner  - Diner #5 is eating.
+4115 [Table  #1] INFO  threads.Diner  - Table  #1 done at:2050
+4115 [Table  #1] INFO  threads.Diner  - Diner #6 arrived at:60 seated at Table  #1
+4115 [Table  #1] INFO  threads.Diner  - Diner #6 is waiting for food.
+4171 [Table  #3] INFO  threads.Diner  - Table  #3 done at:3150
+4171 [Table  #3] INFO  threads.Diner  - Diner #7 arrived at:70 seated at Table  #3
+4172 [Table  #3] INFO  threads.Diner  - Diner #7 is waiting for food.
+4665 [Table  #4] INFO  threads.Diner  - Table  #4 done at:3250
+4666 [Table  #4] INFO  threads.Diner  - Diner #8 arrived at:71 seated at Table  #4
+4666 [Table  #4] INFO  threads.Diner  - Diner #8 is waiting for food.
+4673 [Table  #1] INFO  threads.Diner  - Diner #6 is eating.
+5611 [Table  #2] INFO  threads.Diner  - Table  #2 done at:3350
+5611 [Table  #2] INFO  threads.Diner  - Diner #9 arrived at:72 seated at Table  #2
+5611 [Table  #2] INFO  threads.Diner  - Diner #9 is waiting for food.
+5782 [Table  #3] INFO  threads.Diner  - Diner #7 is eating.
+6178 [Table  #1] INFO  threads.Diner  - Table  #1 done at:6050
+6179 [Table  #1] INFO  threads.Diner  - Diner #10 arrived at:73 seated at Table  #1
+6179 [Table  #1] INFO  threads.Diner  - Diner #10 is waiting for food.
+6189 [Table  #4] INFO  threads.Diner  - Diner #8 is eating.
+6749 [Table  #2] INFO  threads.Diner  - Diner #9 is eating.
+7286 [Table  #3] INFO  threads.Diner  - Table  #3 done at:7050
+7294 [Table  #1] INFO  threads.Diner  - Diner #10 is eating.
+7691 [Table  #4] INFO  threads.Diner  - Table  #4 done at:7150
+8254 [Table  #2] INFO  threads.Diner  - Table  #2 done at:7250
+8799 [Table  #1] INFO  threads.Diner  - Table  #1 done at:7350
+8799 [Table  #1] INFO  managers.DinerManager  - Last diner leaves
+8799 [Table  #1] INFO  util.Restaurant  - Restaurant Closed

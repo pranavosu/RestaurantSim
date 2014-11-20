@@ -10,8 +10,6 @@ import resource.Machine;
 
 public class MachineManager {
 
-	//	Object obj = new Object();
-	//	
 	BurgerMachine burgerMachine;
 	FriesMachine friesMachine;
 	CokeMachine cokeMachine;

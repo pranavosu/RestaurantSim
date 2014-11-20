@@ -8,14 +8,13 @@ public class FriesMachine extends Machine {
 	@Override
 	public
 	boolean isAvailable() {
-		// TODO Auto-generated method stub
+		
 		return isAvailable;
 	}
 
 	@Override
-	public
-	Order fulfil(Order o) {
-		// TODO Auto-generated method stub
+	public Order fulfil(Order o) {
+		
 		for (int i = 0; i < o.getFriesCount(); i++) {
 			try {
 				Thread.sleep(3 * Constants.MINUTE_SCALING);
@@ -29,9 +28,8 @@ public class FriesMachine extends Machine {
 	}
 
 	@Override
-	public
-	void setAvailable(boolean available) {
-		// TODO Auto-generated method stub
+	public void setAvailable(boolean available) {
+		
 		isAvailable = available;
 	}
 

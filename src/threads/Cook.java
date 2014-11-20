@@ -21,44 +21,28 @@ public class Cook implements Runnable{
 	
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
-		
-		
-		
 		
 		Order order = this.diner.getOrder();
 		
 		if (order.getFriesCount() == 0) {
-			
 			order.setFriesReady(true);
-		
-			
 		}
+		
 		if (order.getCokeCount() == 0) {
-			
 			order.setCokeReady(true);
-			
-			
 		}
 		
 		MachineManager manager = MachineManager.getInstance();
 		
-
-		
 		while(!order.isReady()){
 			
 			Machine machine = manager.getAvailableMachine(order);
-			
-			
-			if(machine == null){ //logger.info("No Machine");
-			continue;}
 			
 			machine.fulfil(order);
 			
 			manager.releaseMachine(machine);
 			
 		}
-		
 		
 		synchronized (diner) {
 			diner.notify();
