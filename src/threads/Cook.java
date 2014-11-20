@@ -21,6 +21,13 @@ public class Cook implements Runnable{
 		// TODO Auto-generated method stub
 		
 		
+		Order currentOrder = this.diner.getOrder();
+		
+		
+		
+		
+		
+		
 		try {
 			Thread.sleep(50);
 		} catch (InterruptedException e) {

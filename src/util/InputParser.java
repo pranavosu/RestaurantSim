@@ -57,7 +57,7 @@ public class InputParser {
 					
 					dinerList.add(d);
 					
-					System.out.println(line);
+					//System.out.println(line);
 					
 				}
 				

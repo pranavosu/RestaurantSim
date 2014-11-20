@@ -57,9 +57,14 @@ public class Restaurant {
 
 	private boolean shouldRemainOpen() {
 		
-		return clock.getTime() <= 120 && (!dinerMgr.isRestaurantEmpty());
+		return clock.getTime() <= 120 || (!dinerMgr.isRestaurantEmpty());
 	
 	}
 	
-
+	public static void close(){
+		
+		logger.info("Restaurant Closed");
+		System.exit(0);
+	}
+	
 }

@@ -5,7 +5,6 @@ import managers.DinerManager;
 
 import org.apache.log4j.Logger;
 
-import util.Restaurant;
 import env.EnvironmentConstants;
 import env.Order;
 
@@ -29,6 +28,7 @@ public class Diner implements Runnable{
 	public void run() {
 		
 		
+		//TODO: Print arrive
 		logger.info("Diner #"+dinerId+" arrived at:"+arrivalTime+" seated at "+Thread.currentThread().getName());
 		
 		
@@ -40,9 +40,10 @@ public class Diner implements Runnable{
 		eat();
 		
 		
-		
+		//TODO Print done
 		logger.info(Thread.currentThread().getName()+" done at:"+arrivalTime+50);
 		
+		DinerManager.getInstance().getChequeAndLeave();
 		
 	}
 

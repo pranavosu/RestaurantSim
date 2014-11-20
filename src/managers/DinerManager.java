@@ -8,14 +8,15 @@ import java.util.TimerTask;
 import org.apache.log4j.Logger;
 
 import threads.Diner;
+import util.Restaurant;
 import env.EnvironmentConstants;
 
 
 public class DinerManager {
 
 	private List<Diner> diners = new ArrayList<Diner>();
-	private int numDinersInRestaurant;
-	private int orderCount;
+	private static int numDinersInRestaurant;
+	private static int orderCount;
 	
 	public static final Logger logger = Logger.getLogger(DinerManager.class);
 
@@ -72,4 +73,16 @@ public class DinerManager {
 		
 	}
 	
+	public void getChequeAndLeave(){
+		
+		numDinersInRestaurant--;
+		
+		if(isRestaurantEmpty()){
+			
+			logger.info("Last diner leaves");
+			
+			Restaurant.close();
+			
+		}
+	}	
 }
