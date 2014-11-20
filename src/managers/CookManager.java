@@ -8,7 +8,7 @@ import org.apache.log4j.Logger;
 import pools.RestaurantThreadPoolExecutor;
 import threads.Cook;
 import threads.Diner;
-import env.EnvironmentConstants;
+import env.Constants;
 import env.Order;
 
 
@@ -36,7 +36,7 @@ public class CookManager {
 		
 		cooks = new RestaurantThreadPoolExecutor("Cook",
 				numCooks, numCooks,
-				40 * EnvironmentConstants.MINUTE_SCALING,
+				40 * Constants.MINUTE_SCALING,
 				TimeUnit.MILLISECONDS, 
 				new LinkedBlockingQueue<Runnable>());
 	

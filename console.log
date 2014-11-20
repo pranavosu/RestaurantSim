@@ -1,150 +1,33 @@
 0    [main] INFO  util.SimulationEngine  - Logger initialized
-16   [main] INFO  env.Clock  - Current Time : 0
-70   [main] INFO  env.Clock  - Current Time : 1
-121  [main] INFO  env.Clock  - Current Time : 2
-176  [main] INFO  env.Clock  - Current Time : 3
-227  [main] INFO  env.Clock  - Current Time : 4
-281  [main] INFO  env.Clock  - Current Time : 5
-336  [main] INFO  env.Clock  - Current Time : 6
-391  [main] INFO  env.Clock  - Current Time : 7
-444  [main] INFO  env.Clock  - Current Time : 8
-494  [main] INFO  env.Clock  - Current Time : 9
-546  [main] INFO  env.Clock  - Current Time : 10
-601  [main] INFO  env.Clock  - Current Time : 11
-652  [main] INFO  env.Clock  - Current Time : 12
-707  [main] INFO  env.Clock  - Current Time : 13
-758  [main] INFO  env.Clock  - Current Time : 14
-808  [main] INFO  env.Clock  - Current Time : 15
-859  [main] INFO  env.Clock  - Current Time : 16
-914  [main] INFO  env.Clock  - Current Time : 17
-966  [main] INFO  env.Clock  - Current Time : 18
-1020 [main] INFO  env.Clock  - Current Time : 19
-1021 [Table  #1] INFO  threads.Diner  - Diner #1 arrived at:20 seated at Table  #1
-1072 [main] INFO  env.Clock  - Current Time : 20
-1072 [Table  #1] INFO  threads.Diner  - Diner #1 is eating.
-1124 [main] INFO  env.Clock  - Current Time : 21
-1178 [main] INFO  env.Clock  - Current Time : 22
-1233 [main] INFO  env.Clock  - Current Time : 23
-1284 [main] INFO  env.Clock  - Current Time : 24
-1339 [main] INFO  env.Clock  - Current Time : 25
-1391 [main] INFO  env.Clock  - Current Time : 26
-1446 [main] INFO  env.Clock  - Current Time : 27
-1497 [main] INFO  env.Clock  - Current Time : 28
-1521 [Table  #2] INFO  threads.Diner  - Diner #2 arrived at:30 seated at Table  #2
-1548 [main] INFO  env.Clock  - Current Time : 29
-1570 [Table  #3] INFO  threads.Diner  - Diner #3 arrived at:31 seated at Table  #3
-1573 [Table  #2] INFO  threads.Diner  - Diner #2 is eating.
-1603 [main] INFO  env.Clock  - Current Time : 30
-1618 [Table  #4] INFO  threads.Diner  - Diner #4 arrived at:32 seated at Table  #4
-1623 [Table  #3] INFO  threads.Diner  - Diner #3 is eating.
-1656 [main] INFO  env.Clock  - Current Time : 31
-1669 [Table  #4] INFO  threads.Diner  - Diner #4 is eating.
-1707 [main] INFO  env.Clock  - Current Time : 32
-1761 [main] INFO  env.Clock  - Current Time : 33
-1817 [main] INFO  env.Clock  - Current Time : 34
-1870 [main] INFO  env.Clock  - Current Time : 35
-1924 [main] INFO  env.Clock  - Current Time : 36
-1976 [main] INFO  env.Clock  - Current Time : 37
-2032 [main] INFO  env.Clock  - Current Time : 38
-2084 [main] INFO  env.Clock  - Current Time : 39
-2136 [main] INFO  env.Clock  - Current Time : 40
-2187 [main] INFO  env.Clock  - Current Time : 41
-2238 [main] INFO  env.Clock  - Current Time : 42
-2293 [main] INFO  env.Clock  - Current Time : 43
-2346 [main] INFO  env.Clock  - Current Time : 44
-2399 [main] INFO  env.Clock  - Current Time : 45
-2451 [main] INFO  env.Clock  - Current Time : 46
-2504 [main] INFO  env.Clock  - Current Time : 47
-2556 [main] INFO  env.Clock  - Current Time : 48
-2573 [Table  #1] INFO  threads.Diner  - Table  #1 done at:2050
-2573 [Table  #1] INFO  threads.Diner  - Diner #5 arrived at:33 seated at Table  #1
-2611 [main] INFO  env.Clock  - Current Time : 49
-2626 [Table  #1] INFO  threads.Diner  - Diner #5 is eating.
-2666 [main] INFO  env.Clock  - Current Time : 50
-2720 [main] INFO  env.Clock  - Current Time : 51
-2775 [main] INFO  env.Clock  - Current Time : 52
-2826 [main] INFO  env.Clock  - Current Time : 53
-2879 [main] INFO  env.Clock  - Current Time : 54
-2932 [main] INFO  env.Clock  - Current Time : 55
-2986 [main] INFO  env.Clock  - Current Time : 56
-3037 [main] INFO  env.Clock  - Current Time : 57
-3077 [Table  #2] INFO  threads.Diner  - Table  #2 done at:3050
+1018 [Table  #1] INFO  threads.Diner  - Diner #1 arrived at:20 seated at Table  #1
+1070 [Table  #1] INFO  threads.Diner  - Diner #1 is eating.
+1520 [Table  #2] INFO  threads.Diner  - Diner #2 arrived at:30 seated at Table  #2
+1571 [Table  #2] INFO  threads.Diner  - Diner #2 is eating.
+1572 [Table  #3] INFO  threads.Diner  - Diner #3 arrived at:31 seated at Table  #3
+1622 [Table  #4] INFO  threads.Diner  - Diner #4 arrived at:32 seated at Table  #4
+1624 [Table  #3] INFO  threads.Diner  - Diner #3 is eating.
+1676 [Table  #4] INFO  threads.Diner  - Diner #4 is eating.
+2575 [Table  #1] INFO  threads.Diner  - Table  #1 done at:2050
+2576 [Table  #1] INFO  threads.Diner  - Diner #5 arrived at:33 seated at Table  #1
+2630 [Table  #1] INFO  threads.Diner  - Diner #5 is eating.
+3076 [Table  #2] INFO  threads.Diner  - Table  #2 done at:3050
 3077 [Table  #2] INFO  threads.Diner  - Diner #6 arrived at:60 seated at Table  #2
-3090 [main] INFO  env.Clock  - Current Time : 58
-3126 [Table  #3] INFO  threads.Diner  - Table  #3 done at:3150
+3124 [Table  #3] INFO  threads.Diner  - Table  #3 done at:3150
 3132 [Table  #2] INFO  threads.Diner  - Diner #6 is eating.
-3143 [main] INFO  env.Clock  - Current Time : 59
-3170 [Table  #4] INFO  threads.Diner  - Table  #4 done at:3250
-3196 [main] INFO  env.Clock  - Current Time : 60
-3251 [main] INFO  env.Clock  - Current Time : 61
-3306 [main] INFO  env.Clock  - Current Time : 62
-3361 [main] INFO  env.Clock  - Current Time : 63
-3411 [main] INFO  env.Clock  - Current Time : 64
-3465 [main] INFO  env.Clock  - Current Time : 65
-3516 [Table  #3] INFO  threads.Diner  - Diner #7 arrived at:70 seated at Table  #3
-3519 [main] INFO  env.Clock  - Current Time : 66
-3568 [Table  #3] INFO  threads.Diner  - Diner #7 is eating.
-3568 [Table  #4] INFO  threads.Diner  - Diner #8 arrived at:71 seated at Table  #4
-3570 [main] INFO  env.Clock  - Current Time : 67
-3621 [main] INFO  env.Clock  - Current Time : 68
-3621 [Table  #4] INFO  threads.Diner  - Diner #8 is eating.
-3672 [main] INFO  env.Clock  - Current Time : 69
-3726 [main] INFO  env.Clock  - Current Time : 70
-3779 [main] INFO  env.Clock  - Current Time : 71
-3831 [main] INFO  env.Clock  - Current Time : 72
-3882 [main] INFO  env.Clock  - Current Time : 73
-3934 [main] INFO  env.Clock  - Current Time : 74
-3987 [main] INFO  env.Clock  - Current Time : 75
-4042 [main] INFO  env.Clock  - Current Time : 76
-4094 [main] INFO  env.Clock  - Current Time : 77
-4128 [Table  #1] INFO  threads.Diner  - Table  #1 done at:3350
-4128 [Table  #1] INFO  threads.Diner  - Diner #9 arrived at:72 seated at Table  #1
-4146 [main] INFO  env.Clock  - Current Time : 78
-4183 [Table  #1] INFO  threads.Diner  - Diner #9 is eating.
-4200 [main] INFO  env.Clock  - Current Time : 79
-4255 [main] INFO  env.Clock  - Current Time : 80
-4310 [main] INFO  env.Clock  - Current Time : 81
-4365 [main] INFO  env.Clock  - Current Time : 82
-4416 [main] INFO  env.Clock  - Current Time : 83
-4466 [main] INFO  env.Clock  - Current Time : 84
-4516 [main] INFO  env.Clock  - Current Time : 85
-4571 [main] INFO  env.Clock  - Current Time : 86
-4626 [main] INFO  env.Clock  - Current Time : 87
-4633 [Table  #2] INFO  threads.Diner  - Table  #2 done at:6050
-4634 [Table  #2] INFO  threads.Diner  - Diner #10 arrived at:73 seated at Table  #2
-4681 [main] INFO  env.Clock  - Current Time : 88
-4687 [Table  #2] INFO  threads.Diner  - Diner #10 is eating.
-4732 [main] INFO  env.Clock  - Current Time : 89
-4783 [main] INFO  env.Clock  - Current Time : 90
-4836 [main] INFO  env.Clock  - Current Time : 91
-4891 [main] INFO  env.Clock  - Current Time : 92
-4944 [main] INFO  env.Clock  - Current Time : 93
-4997 [main] INFO  env.Clock  - Current Time : 94
-5048 [main] INFO  env.Clock  - Current Time : 95
-5069 [Table  #3] INFO  threads.Diner  - Table  #3 done at:7050
-5104 [main] INFO  env.Clock  - Current Time : 96
-5125 [Table  #4] INFO  threads.Diner  - Table  #4 done at:7150
-5159 [main] INFO  env.Clock  - Current Time : 97
-5210 [main] INFO  env.Clock  - Current Time : 98
-5264 [main] INFO  env.Clock  - Current Time : 99
-5316 [main] INFO  env.Clock  - Current Time : 100
-5371 [main] INFO  env.Clock  - Current Time : 101
-5425 [main] INFO  env.Clock  - Current Time : 102
-5477 [main] INFO  env.Clock  - Current Time : 103
-5528 [main] INFO  env.Clock  - Current Time : 104
-5580 [main] INFO  env.Clock  - Current Time : 105
-5631 [main] INFO  env.Clock  - Current Time : 106
-5685 [main] INFO  env.Clock  - Current Time : 107
-5686 [Table  #1] INFO  threads.Diner  - Table  #1 done at:7250
-5737 [main] INFO  env.Clock  - Current Time : 108
-5791 [main] INFO  env.Clock  - Current Time : 109
-5842 [main] INFO  env.Clock  - Current Time : 110
-5896 [main] INFO  env.Clock  - Current Time : 111
-5951 [main] INFO  env.Clock  - Current Time : 112
-6005 [main] INFO  env.Clock  - Current Time : 113
-6056 [main] INFO  env.Clock  - Current Time : 114
-6111 [main] INFO  env.Clock  - Current Time : 115
-6166 [main] INFO  env.Clock  - Current Time : 116
-6192 [Table  #2] INFO  threads.Diner  - Table  #2 done at:7350
-6193 [Table  #2] INFO  managers.DinerManager  - Last diner leaves
-6193 [Table  #2] INFO  util.Restaurant  - Restaurant Closed
+3182 [Table  #4] INFO  threads.Diner  - Table  #4 done at:3250
+3521 [Table  #3] INFO  threads.Diner  - Diner #7 arrived at:70 seated at Table  #3
+3566 [Table  #4] INFO  threads.Diner  - Diner #8 arrived at:71 seated at Table  #4
+3572 [Table  #3] INFO  threads.Diner  - Diner #7 is eating.
+3620 [Table  #4] INFO  threads.Diner  - Diner #8 is eating.
+4135 [Table  #1] INFO  threads.Diner  - Table  #1 done at:3350
+4135 [Table  #1] INFO  threads.Diner  - Diner #9 arrived at:72 seated at Table  #1
+4190 [Table  #1] INFO  threads.Diner  - Diner #9 is eating.
+4637 [Table  #2] INFO  threads.Diner  - Table  #2 done at:6050
+4638 [Table  #2] INFO  threads.Diner  - Diner #10 arrived at:73 seated at Table  #2
+4689 [Table  #2] INFO  threads.Diner  - Diner #10 is eating.
+5077 [Table  #3] INFO  threads.Diner  - Table  #3 done at:7050
+5121 [Table  #4] INFO  threads.Diner  - Table  #4 done at:7150
+5695 [Table  #1] INFO  threads.Diner  - Table  #1 done at:7250
+6195 [Table  #2] INFO  threads.Diner  - Table  #2 done at:7350
+6195 [Table  #2] INFO  managers.DinerManager  - Last diner leaves
+6195 [Table  #2] INFO  util.Restaurant  - Restaurant Closed

@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
 
 import threads.Diner;
 import util.Restaurant;
-import env.EnvironmentConstants;
+import env.Constants;
 
 
 public class DinerManager {
@@ -66,7 +66,7 @@ public class DinerManager {
 			Timer timer = new Timer();
 			
 			timer.schedule(timerTask, diner.getArrivalTime()
-					* EnvironmentConstants.MINUTE_SCALING);
+					* Constants.MINUTE_SCALING);
 			
 			
 		}

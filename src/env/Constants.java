@@ -1,8 +1,6 @@
 package env;
 
-public class EnvironmentConstants {
-
-	
+public class Constants {
 	
 	public static final int MINUTE_SCALING = 50;
 	

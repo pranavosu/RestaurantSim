@@ -1,7 +1,10 @@
 package threads;
 
+import managers.MachineManager;
+
 import org.apache.log4j.Logger;
 
+import resource.Machine;
 import env.Order;
 
 public class Cook implements Runnable{
@@ -21,10 +24,35 @@ public class Cook implements Runnable{
 		// TODO Auto-generated method stub
 		
 		
-		Order currentOrder = this.diner.getOrder();
+		Order order = this.diner.getOrder();
 		
+		if (order.getFriesCount() == 0) {
+			
+			order.setFriesReady(true);
+			order.itemPrepared();
+			
+		}
+		if (order.getCokeCount() == 0) {
+			
+			order.setCokeReady(true);
+			order.itemPrepared();
+			
+		}
 		
+
+		MachineManager manager = MachineManager.getInstance();
 		
+
+		
+		while(!order.isReady()){
+			
+			Machine machine = manager.getAvailableMachine(order);
+			
+			machine.fulfil(order);
+			
+			manager.releaseMachine(machine);
+			
+		}
 		
 		
 		

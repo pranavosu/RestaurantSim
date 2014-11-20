@@ -5,7 +5,7 @@ import managers.DinerManager;
 
 import org.apache.log4j.Logger;
 
-import env.EnvironmentConstants;
+import env.Constants;
 import env.Order;
 
 public class Diner implements Runnable{
@@ -62,7 +62,7 @@ public class Diner implements Runnable{
 		logger.info("Diner #"+dinerId+" is eating.");
 		
 			try {
-				Thread.sleep(30 * EnvironmentConstants.MINUTE_SCALING);
+				Thread.sleep(30 * Constants.MINUTE_SCALING);
 			} catch (InterruptedException e) {
 				
 				e.printStackTrace();

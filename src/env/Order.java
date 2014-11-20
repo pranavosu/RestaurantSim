@@ -14,6 +14,14 @@ public class Order {
 	private int cokeCount;
 	
 	private int orderId;
+	
+	private int orderItemsCompleted;
+	
+	private boolean areFriesReady;
+	private boolean areBurgersReady;
+	private boolean isCokeReady;
+	
+
 
 	public Order(int burgerCount, int cokeCount, int friesCount, int orderId) {
 		super();
@@ -21,6 +29,84 @@ public class Order {
 		this.burgerCount = burgerCount;
 		this.cokeCount = cokeCount;
 		this.orderId = orderId;
+		orderItemsCompleted = 0;
+	}
+	
+	
+	
+	
+	public int getFriesCount() {
+		return friesCount;
+	}
+
+
+
+
+	public int getBurgerCount() {
+		return burgerCount;
+	}
+
+
+
+
+	public int getCokeCount() {
+		return cokeCount;
+	}
+
+
+
+
+	public boolean areFriesReady() {
+		return areFriesReady;
+	}
+
+
+
+
+	public void setFriesReady(boolean areFriesReady) {
+		this.areFriesReady = areFriesReady;
+	}
+
+
+
+
+	public boolean areBurgersReady() {
+		return areBurgersReady;
+	}
+
+
+
+
+	public void setBurgersReady(boolean areBurgersReady) {
+		this.areBurgersReady = areBurgersReady;
+	}
+
+
+
+
+	public boolean isCokeReady() {
+		return isCokeReady;
+	}
+
+
+
+
+	public void setCokeReady(boolean isCokeReady) {
+		this.isCokeReady = isCokeReady;
+	}
+
+
+
+
+	public void itemPrepared(){
+		
+		orderItemsCompleted++;
+	}
+	
+	public boolean isReady(){
+		
+		return areBurgersReady && areFriesReady && isCokeReady;
+		
 	}
 
 	public int getOrderId() {
@@ -31,8 +117,5 @@ public class Order {
 		this.orderId = orderId;
 	}
 	
-	
-	
-
 	
 }
