@@ -13,6 +13,13 @@ public class ParsedInput {
 	
 	List<Diner> diners;
 
+	@Override
+	public String toString() {
+		return "ParsedInput [numberOfDiners=" + numberOfDiners
+				+ ", numberOfTables=" + numberOfTables + ", numberOfCooks="
+				+ numberOfCooks + ", diners=" + diners + "]";
+	}
+
 	public int getNumberOfDiners() {
 		return numberOfDiners;
 	}

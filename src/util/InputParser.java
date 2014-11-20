@@ -59,12 +59,9 @@ public class InputParser {
 					
 					System.out.println(line);
 					
-					
-					
 				}
 				
-				
-				
+				parsedInput.setDiners(dinerList);
 				
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
@@ -72,17 +69,9 @@ public class InputParser {
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}finally{
-				
-			
 			}
 		
-			
-		
-		
-		
-		
-		return null;
+		return parsedInput;
 		
 	}
 }

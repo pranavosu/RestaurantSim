@@ -5,9 +5,11 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 
-import env.EnvironmentConstants;
 import pools.RestaurantThreadPoolExecutor;
 import threads.Cook;
+import threads.Diner;
+import env.EnvironmentConstants;
+import env.Order;
 
 
 public class CookManager {
@@ -17,6 +19,7 @@ public class CookManager {
 	public static final Logger logger = Logger.getLogger(CookManager.class);
 
 	private RestaurantThreadPoolExecutor cooks;
+	
 	
 	//Synchronization using Init on Demand
 	private static class SingletonHolder {
@@ -37,6 +40,15 @@ public class CookManager {
 				TimeUnit.MILLISECONDS, 
 				new LinkedBlockingQueue<Runnable>());
 	
+	}
+	
+	
+	public void takeOrder(Diner diner){
+		
+		Cook c = new Cook(diner);
+		
+		cooks.execute(c);
+		
 	}
 	
 }

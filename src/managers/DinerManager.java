@@ -1,17 +1,19 @@
 package managers;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
 import org.apache.log4j.Logger;
-import env.EnvironmentConstants;
+
 import threads.Diner;
+import env.EnvironmentConstants;
 
 
 public class DinerManager {
 
-	private ArrayList<Diner> diners = new ArrayList<Diner>();
+	private List<Diner> diners = new ArrayList<Diner>();
 	private int numDinersInRestaurant;
 	private int orderCount;
 	
@@ -22,8 +24,9 @@ public class DinerManager {
         static final DinerManager instance = new DinerManager();
     }
 	
-	public void init(int numDiners){
+	public void init(int numDiners, List<Diner> diners){
 		numDinersInRestaurant = numDiners;
+		this.diners = diners;
 	}
 	
 	
@@ -39,7 +42,7 @@ public class DinerManager {
 		
 	}
 	
-	public void scheduleDiners(ArrayList<Diner> diners){
+	public void scheduleDiners(){
 		
 		
 		final TableManager manager = TableManager.getInstance();

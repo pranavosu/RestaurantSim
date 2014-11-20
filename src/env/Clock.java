@@ -5,6 +5,7 @@ import org.apache.log4j.Logger;
 public class Clock {
 	private static Clock clock = null;
 	private int time;
+	private long startTime;
 	
 	public static final Logger logger = Logger.getLogger(Clock.class);
 	
@@ -21,6 +22,13 @@ public class Clock {
 			clock = new Clock();
 		}
 		return clock;
+	}
+	
+	public long startClock(){
+	
+		startTime = System.currentTimeMillis();
+		
+		return startTime;
 	}
 	
 	public void increment() {

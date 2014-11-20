@@ -6,16 +6,13 @@ import env.Order;
 
 public class Cook implements Runnable{
 
-	private Thread cook;
-	private int arrivalTime;
-	private int seatingTime;
-	private Order order;
+	private Diner diner;
 	
 	public static final Logger logger = Logger.getLogger(Cook.class);
 	
-	public Cook(int id) {
+	public Cook(Diner d) {
 		
-		this.cook = new Thread(this, "Cook #"+id);
+		this.diner = d;
 		
 	}
 	
@@ -23,6 +20,17 @@ public class Cook implements Runnable{
 	public void run() {
 		// TODO Auto-generated method stub
 		
+		
+		try {
+			Thread.sleep(50);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		synchronized (diner) {
+			diner.notify();
+		}
 	}
 	
 	

@@ -23,7 +23,7 @@ public class SimulationEngine {
 		
 		ParsedInput pi = InputParser.parseRestaurantInputFile(args[0]);
 		
-		Restaurant restaurant = new Restaurant(pi.getNumberOfTables(), pi.getNumberOfCooks(), pi.getNumberOfDiners());
+		Restaurant restaurant = new Restaurant(pi.getNumberOfTables(), pi.getNumberOfCooks(), pi.getNumberOfDiners(),pi.getDiners());
 		
 		restaurant.open();
 			

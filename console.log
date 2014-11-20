@@ -1,62 +1,152 @@
 0    [main] INFO  util.SimulationEngine  - Logger initialized
-21   [main] INFO  env.Clock  - Current Time : 0
-72   [main] INFO  env.Clock  - Current Time : 1
-127  [main] INFO  env.Clock  - Current Time : 2
-180  [main] INFO  env.Clock  - Current Time : 3
-231  [main] INFO  env.Clock  - Current Time : 4
-285  [main] INFO  env.Clock  - Current Time : 5
-337  [main] INFO  env.Clock  - Current Time : 6
-391  [main] INFO  env.Clock  - Current Time : 7
-445  [main] INFO  env.Clock  - Current Time : 8
-495  [main] INFO  env.Clock  - Current Time : 9
-548  [main] INFO  env.Clock  - Current Time : 10
-603  [main] INFO  env.Clock  - Current Time : 11
-654  [main] INFO  env.Clock  - Current Time : 12
-709  [main] INFO  env.Clock  - Current Time : 13
-760  [main] INFO  env.Clock  - Current Time : 14
-816  [main] INFO  env.Clock  - Current Time : 15
-869  [main] INFO  env.Clock  - Current Time : 16
-922  [main] INFO  env.Clock  - Current Time : 17
-972  [main] INFO  env.Clock  - Current Time : 18
-1027 [main] INFO  env.Clock  - Current Time : 19
-1079 [main] INFO  env.Clock  - Current Time : 20
-1131 [main] INFO  env.Clock  - Current Time : 21
-1185 [main] INFO  env.Clock  - Current Time : 22
-1241 [main] INFO  env.Clock  - Current Time : 23
-1291 [main] INFO  env.Clock  - Current Time : 24
-1345 [main] INFO  env.Clock  - Current Time : 25
-1400 [main] INFO  env.Clock  - Current Time : 26
-1454 [main] INFO  env.Clock  - Current Time : 27
-1505 [main] INFO  env.Clock  - Current Time : 28
-1555 [main] INFO  env.Clock  - Current Time : 29
-1606 [main] INFO  env.Clock  - Current Time : 30
-1657 [main] INFO  env.Clock  - Current Time : 31
-1708 [main] INFO  env.Clock  - Current Time : 32
-1759 [main] INFO  env.Clock  - Current Time : 33
-1810 [main] INFO  env.Clock  - Current Time : 34
-1863 [main] INFO  env.Clock  - Current Time : 35
-1915 [main] INFO  env.Clock  - Current Time : 36
-1970 [main] INFO  env.Clock  - Current Time : 37
-2024 [main] INFO  env.Clock  - Current Time : 38
-2075 [main] INFO  env.Clock  - Current Time : 39
-2126 [main] INFO  env.Clock  - Current Time : 40
-2179 [main] INFO  env.Clock  - Current Time : 41
-2232 [main] INFO  env.Clock  - Current Time : 42
-2285 [main] INFO  env.Clock  - Current Time : 43
-2341 [main] INFO  env.Clock  - Current Time : 44
-2395 [main] INFO  env.Clock  - Current Time : 45
-2448 [main] INFO  env.Clock  - Current Time : 46
-2500 [main] INFO  env.Clock  - Current Time : 47
-2551 [main] INFO  env.Clock  - Current Time : 48
-2602 [main] INFO  env.Clock  - Current Time : 49
-2657 [main] INFO  env.Clock  - Current Time : 50
-2712 [main] INFO  env.Clock  - Current Time : 51
-2763 [main] INFO  env.Clock  - Current Time : 52
-2814 [main] INFO  env.Clock  - Current Time : 53
-2866 [main] INFO  env.Clock  - Current Time : 54
-2916 [main] INFO  env.Clock  - Current Time : 55
-2970 [main] INFO  env.Clock  - Current Time : 56
-3025 [main] INFO  env.Clock  - Current Time : 57
-3078 [main] INFO  env.Clock  - Current Time : 58
-3128 [main] INFO  env.Clock  - Current Time : 59
-3180 [main] INFO  env.Clock  - Current Time : 60
+16   [main] INFO  env.Clock  - Current Time : 0
+66   [main] INFO  env.Clock  - Current Time : 1
+120  [main] INFO  env.Clock  - Current Time : 2
+170  [main] INFO  env.Clock  - Current Time : 3
+221  [main] INFO  env.Clock  - Current Time : 4
+277  [main] INFO  env.Clock  - Current Time : 5
+328  [main] INFO  env.Clock  - Current Time : 6
+383  [main] INFO  env.Clock  - Current Time : 7
+433  [main] INFO  env.Clock  - Current Time : 8
+484  [main] INFO  env.Clock  - Current Time : 9
+539  [main] INFO  env.Clock  - Current Time : 10
+590  [main] INFO  env.Clock  - Current Time : 11
+645  [main] INFO  env.Clock  - Current Time : 12
+696  [main] INFO  env.Clock  - Current Time : 13
+751  [main] INFO  env.Clock  - Current Time : 14
+806  [main] INFO  env.Clock  - Current Time : 15
+856  [main] INFO  env.Clock  - Current Time : 16
+911  [main] INFO  env.Clock  - Current Time : 17
+965  [main] INFO  env.Clock  - Current Time : 18
+1020 [main] INFO  env.Clock  - Current Time : 19
+1021 [Table  #1] INFO  threads.Diner  - Diner #1 arrived at:20 seated at Table  #1
+1073 [main] INFO  env.Clock  - Current Time : 20
+1074 [Table  #1] INFO  threads.Diner  - Diner #1 is eating.
+1124 [main] INFO  env.Clock  - Current Time : 21
+1176 [main] INFO  env.Clock  - Current Time : 22
+1227 [main] INFO  env.Clock  - Current Time : 23
+1282 [main] INFO  env.Clock  - Current Time : 24
+1337 [main] INFO  env.Clock  - Current Time : 25
+1391 [main] INFO  env.Clock  - Current Time : 26
+1443 [main] INFO  env.Clock  - Current Time : 27
+1494 [main] INFO  env.Clock  - Current Time : 28
+1518 [Table  #2] INFO  threads.Diner  - Diner #2 arrived at:30 seated at Table  #2
+1549 [main] INFO  env.Clock  - Current Time : 29
+1569 [Table  #3] INFO  threads.Diner  - Diner #3 arrived at:31 seated at Table  #3
+1570 [Table  #2] INFO  threads.Diner  - Diner #2 is eating.
+1601 [main] INFO  env.Clock  - Current Time : 30
+1620 [Table  #3] INFO  threads.Diner  - Diner #3 is eating.
+1621 [Table  #4] INFO  threads.Diner  - Diner #4 arrived at:32 seated at Table  #4
+1656 [main] INFO  env.Clock  - Current Time : 31
+1672 [Table  #4] INFO  threads.Diner  - Diner #4 is eating.
+1710 [main] INFO  env.Clock  - Current Time : 32
+1765 [main] INFO  env.Clock  - Current Time : 33
+1816 [main] INFO  env.Clock  - Current Time : 34
+1866 [main] INFO  env.Clock  - Current Time : 35
+1919 [main] INFO  env.Clock  - Current Time : 36
+1975 [main] INFO  env.Clock  - Current Time : 37
+2026 [main] INFO  env.Clock  - Current Time : 38
+2080 [main] INFO  env.Clock  - Current Time : 39
+2135 [main] INFO  env.Clock  - Current Time : 40
+2189 [main] INFO  env.Clock  - Current Time : 41
+2241 [main] INFO  env.Clock  - Current Time : 42
+2296 [main] INFO  env.Clock  - Current Time : 43
+2351 [main] INFO  env.Clock  - Current Time : 44
+2405 [main] INFO  env.Clock  - Current Time : 45
+2457 [main] INFO  env.Clock  - Current Time : 46
+2509 [main] INFO  env.Clock  - Current Time : 47
+2563 [main] INFO  env.Clock  - Current Time : 48
+2575 [Table  #1] INFO  threads.Diner  - Table  #1 done at:2050
+2575 [Table  #1] INFO  threads.Diner  - Diner #5 arrived at:33 seated at Table  #1
+2614 [main] INFO  env.Clock  - Current Time : 49
+2628 [Table  #1] INFO  threads.Diner  - Diner #5 is eating.
+2670 [main] INFO  env.Clock  - Current Time : 50
+2720 [main] INFO  env.Clock  - Current Time : 51
+2771 [main] INFO  env.Clock  - Current Time : 52
+2822 [main] INFO  env.Clock  - Current Time : 53
+2873 [main] INFO  env.Clock  - Current Time : 54
+2926 [main] INFO  env.Clock  - Current Time : 55
+2977 [main] INFO  env.Clock  - Current Time : 56
+3031 [main] INFO  env.Clock  - Current Time : 57
+3074 [Table  #2] INFO  threads.Diner  - Table  #2 done at:3050
+3074 [Table  #2] INFO  threads.Diner  - Diner #6 arrived at:60 seated at Table  #2
+3082 [main] INFO  env.Clock  - Current Time : 58
+3122 [Table  #3] INFO  threads.Diner  - Table  #3 done at:3150
+3130 [Table  #2] INFO  threads.Diner  - Diner #6 is eating.
+3137 [main] INFO  env.Clock  - Current Time : 59
+3177 [Table  #4] INFO  threads.Diner  - Table  #4 done at:3250
+3191 [main] INFO  env.Clock  - Current Time : 60
+3244 [main] INFO  env.Clock  - Current Time : 61
+3296 [main] INFO  env.Clock  - Current Time : 62
+3351 [main] INFO  env.Clock  - Current Time : 63
+3404 [main] INFO  env.Clock  - Current Time : 64
+3455 [main] INFO  env.Clock  - Current Time : 65
+3508 [main] INFO  env.Clock  - Current Time : 66
+3518 [Table  #3] INFO  threads.Diner  - Diner #7 arrived at:70 seated at Table  #3
+3563 [main] INFO  env.Clock  - Current Time : 67
+3566 [Table  #4] INFO  threads.Diner  - Diner #8 arrived at:71 seated at Table  #4
+3571 [Table  #3] INFO  threads.Diner  - Diner #7 is eating.
+3617 [main] INFO  env.Clock  - Current Time : 68
+3617 [Table  #4] INFO  threads.Diner  - Diner #8 is eating.
+3671 [main] INFO  env.Clock  - Current Time : 69
+3722 [main] INFO  env.Clock  - Current Time : 70
+3777 [main] INFO  env.Clock  - Current Time : 71
+3830 [main] INFO  env.Clock  - Current Time : 72
+3881 [main] INFO  env.Clock  - Current Time : 73
+3935 [main] INFO  env.Clock  - Current Time : 74
+3987 [main] INFO  env.Clock  - Current Time : 75
+4040 [main] INFO  env.Clock  - Current Time : 76
+4091 [main] INFO  env.Clock  - Current Time : 77
+4133 [Table  #1] INFO  threads.Diner  - Table  #1 done at:3350
+4133 [Table  #1] INFO  threads.Diner  - Diner #9 arrived at:72 seated at Table  #1
+4146 [main] INFO  env.Clock  - Current Time : 78
+4187 [Table  #1] INFO  threads.Diner  - Diner #9 is eating.
+4199 [main] INFO  env.Clock  - Current Time : 79
+4253 [main] INFO  env.Clock  - Current Time : 80
+4304 [main] INFO  env.Clock  - Current Time : 81
+4359 [main] INFO  env.Clock  - Current Time : 82
+4410 [main] INFO  env.Clock  - Current Time : 83
+4465 [main] INFO  env.Clock  - Current Time : 84
+4516 [main] INFO  env.Clock  - Current Time : 85
+4571 [main] INFO  env.Clock  - Current Time : 86
+4624 [main] INFO  env.Clock  - Current Time : 87
+4631 [Table  #2] INFO  threads.Diner  - Table  #2 done at:6050
+4632 [Table  #2] INFO  threads.Diner  - Diner #10 arrived at:73 seated at Table  #2
+4677 [main] INFO  env.Clock  - Current Time : 88
+4685 [Table  #2] INFO  threads.Diner  - Diner #10 is eating.
+4732 [main] INFO  env.Clock  - Current Time : 89
+4785 [main] INFO  env.Clock  - Current Time : 90
+4840 [main] INFO  env.Clock  - Current Time : 91
+4896 [main] INFO  env.Clock  - Current Time : 92
+4950 [main] INFO  env.Clock  - Current Time : 93
+5001 [main] INFO  env.Clock  - Current Time : 94
+5056 [main] INFO  env.Clock  - Current Time : 95
+5072 [Table  #3] INFO  threads.Diner  - Table  #3 done at:7050
+5110 [main] INFO  env.Clock  - Current Time : 96
+5118 [Table  #4] INFO  threads.Diner  - Table  #4 done at:7150
+5162 [main] INFO  env.Clock  - Current Time : 97
+5213 [main] INFO  env.Clock  - Current Time : 98
+5267 [main] INFO  env.Clock  - Current Time : 99
+5321 [main] INFO  env.Clock  - Current Time : 100
+5373 [main] INFO  env.Clock  - Current Time : 101
+5424 [main] INFO  env.Clock  - Current Time : 102
+5479 [main] INFO  env.Clock  - Current Time : 103
+5531 [main] INFO  env.Clock  - Current Time : 104
+5583 [main] INFO  env.Clock  - Current Time : 105
+5637 [main] INFO  env.Clock  - Current Time : 106
+5689 [Table  #1] INFO  threads.Diner  - Table  #1 done at:7250
+5689 [main] INFO  env.Clock  - Current Time : 107
+5741 [main] INFO  env.Clock  - Current Time : 108
+5793 [main] INFO  env.Clock  - Current Time : 109
+5848 [main] INFO  env.Clock  - Current Time : 110
+5899 [main] INFO  env.Clock  - Current Time : 111
+5951 [main] INFO  env.Clock  - Current Time : 112
+6005 [main] INFO  env.Clock  - Current Time : 113
+6056 [main] INFO  env.Clock  - Current Time : 114
+6111 [main] INFO  env.Clock  - Current Time : 115
+6165 [main] INFO  env.Clock  - Current Time : 116
+6187 [Table  #2] INFO  threads.Diner  - Table  #2 done at:7350
+6220 [main] INFO  env.Clock  - Current Time : 117
+6276 [main] INFO  env.Clock  - Current Time : 118
+6327 [main] INFO  env.Clock  - Current Time : 119
+6382 [main] INFO  env.Clock  - Current Time : 120

@@ -1,8 +1,12 @@
 package threads;
 
+import managers.CookManager;
+import managers.DinerManager;
+
 import org.apache.log4j.Logger;
 
 import util.Restaurant;
+import env.EnvironmentConstants;
 import env.Order;
 
 public class Diner implements Runnable{
@@ -23,8 +27,45 @@ public class Diner implements Runnable{
 	
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
 		
+		
+		logger.info("Diner #"+dinerId+" arrived at:"+arrivalTime+" seated at "+Thread.currentThread().getName());
+		
+		
+		
+		CookManager.getInstance().takeOrder(this);
+		
+		waitForFood();
+		
+		eat();
+		
+		
+		
+		logger.info(Thread.currentThread().getName()+" done at:"+arrivalTime+50);
+		
+		
+	}
+
+	private void waitForFood() {
+		synchronized (this) {
+			try {
+					wait();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+			}
+		}
+	}
+	
+	public void eat() {
+		
+		logger.info("Diner #"+dinerId+" is eating.");
+		
+			try {
+				Thread.sleep(30 * EnvironmentConstants.MINUTE_SCALING);
+			} catch (InterruptedException e) {
+				
+				e.printStackTrace();
+			}
 	}
 
 	public Order getOrder() {
@@ -41,6 +82,12 @@ public class Diner implements Runnable{
 
 	public void setArrivalTime(int arrivalTime) {
 		this.arrivalTime = arrivalTime;
+	}
+
+	@Override
+	public String toString() {
+		return "Diner [arrivalTime=" + arrivalTime + ", order=" + order
+				+ ", dinerId=" + dinerId + "]";
 	}
 
 
