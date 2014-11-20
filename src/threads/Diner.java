@@ -7,19 +7,17 @@ import env.Order;
 
 public class Diner implements Runnable{
 
-	private Thread diner;
 	private int arrivalTime;
-	private int seatingTime;
 	private Order order;
+	private int dinerId;
 	
 	public static final Logger logger = Logger.getLogger(Diner.class);
 	
-	public Diner(int id, int arrivalTime, int seatingTime, Order order) {
+	public Diner(int id, int arrivalTime, Order order) {
 		
-		this.arrivalTime = arrivalTime;
-		this.seatingTime = seatingTime;
-		this.order = order;
-		this.diner = new Thread(this, "Diner #"+id);
+		this.dinerId = id;
+		this.setArrivalTime(arrivalTime);
+		this.setOrder(order);
 		
 	}
 	
@@ -28,9 +26,23 @@ public class Diner implements Runnable{
 		// TODO Auto-generated method stub
 		
 	}
-	
-	
-	
+
+	public Order getOrder() {
+		return order;
+	}
+
+	public void setOrder(Order order) {
+		this.order = order;
+	}
+
+	public int getArrivalTime() {
+		return arrivalTime;
+	}
+
+	public void setArrivalTime(int arrivalTime) {
+		this.arrivalTime = arrivalTime;
+	}
+
 
 	
 	

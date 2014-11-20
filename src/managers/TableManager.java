@@ -1,14 +1,19 @@
 package managers;
 
-import java.util.ArrayList;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 
-import resource.Table;
+import pools.RestaurantThreadPoolExecutor;
+import threads.Diner;
+import env.EnvironmentConstants;
 
 public class TableManager {
 	
-	private ArrayList<Table> tables = new ArrayList<Table>();
+	//private ArrayList<Table> tables = new ArrayList<Table>();
+	
+	private RestaurantThreadPoolExecutor tables;
 
 	public static final Logger logger = Logger.getLogger(TableManager.class);
 
@@ -19,11 +24,13 @@ public class TableManager {
 	
 	public void init(int numTables){
 		
-		for(int i = 0 ; i < numTables; i++){
-	
-			Table t = new Table(i);
-			tables.add(t);
-		}
+		tables = new RestaurantThreadPoolExecutor(
+				"Table ", numTables, numTables,
+				120 * EnvironmentConstants.MINUTE_SCALING,
+				TimeUnit.MILLISECONDS, new LinkedBlockingQueue<Runnable>());
+		
+		
+		
 	}
 	
 	public static TableManager getInstance() {
@@ -32,6 +39,11 @@ public class TableManager {
 	}
 	
 	
+	public void queueDiner(Diner diner){
+		
+		tables.execute(diner);
+		
+	}
 	
 	
 }

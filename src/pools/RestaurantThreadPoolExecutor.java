@@ -11,7 +11,8 @@ public class RestaurantThreadPoolExecutor extends ThreadPoolExecutor {
 						int maximumPoolSize, long keepAliveTime, TimeUnit unit,
 						BlockingQueue<Runnable> workQueue) {
 		
-		super(corePoolSize, maximumPoolSize, keepAliveTime, unit, workQueue, new RestaurantThreadPoolFactory(name));
+		super(corePoolSize, maximumPoolSize, keepAliveTime, unit,
+			  workQueue, new RestaurantThreadPoolFactory(name));
 		
 	}
 
