@@ -1,5 +1,6 @@
 package resource;
 
+import env.Constants;
 import env.Order;
 
 public class BurgerMachine extends Machine {
@@ -17,7 +18,16 @@ public class BurgerMachine extends Machine {
 	public
 	Order fulfil(Order o) {
 		// TODO Auto-generated method stub
-		return null;
+		for (int i = 0; i < o.getBurgerCount(); i++) {
+			try {
+				Thread.sleep(5 * Constants.MINUTE_SCALING);
+			} catch (InterruptedException e) {
+			}
+		}
+		
+		o.setBurgersReady(true);
+		
+		return o;
 	}
 
 	@Override

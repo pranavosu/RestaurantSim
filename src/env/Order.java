@@ -15,8 +15,6 @@ public class Order {
 	
 	private int orderId;
 	
-	private int orderItemsCompleted;
-	
 	private boolean areFriesReady;
 	private boolean areBurgersReady;
 	private boolean isCokeReady;
@@ -29,7 +27,6 @@ public class Order {
 		this.burgerCount = burgerCount;
 		this.cokeCount = cokeCount;
 		this.orderId = orderId;
-		orderItemsCompleted = 0;
 	}
 	
 	
@@ -98,10 +95,7 @@ public class Order {
 
 
 
-	public void itemPrepared(){
-		
-		orderItemsCompleted++;
-	}
+	
 	
 	public boolean isReady(){
 		

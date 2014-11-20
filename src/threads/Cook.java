@@ -24,22 +24,23 @@ public class Cook implements Runnable{
 		// TODO Auto-generated method stub
 		
 		
+		
+		
 		Order order = this.diner.getOrder();
 		
 		if (order.getFriesCount() == 0) {
 			
 			order.setFriesReady(true);
-			order.itemPrepared();
+		
 			
 		}
 		if (order.getCokeCount() == 0) {
 			
 			order.setCokeReady(true);
-			order.itemPrepared();
+			
 			
 		}
 		
-
 		MachineManager manager = MachineManager.getInstance();
 		
 
@@ -48,20 +49,16 @@ public class Cook implements Runnable{
 			
 			Machine machine = manager.getAvailableMachine(order);
 			
+			
+			if(machine == null){ //logger.info("No Machine");
+			continue;}
+			
 			machine.fulfil(order);
 			
 			manager.releaseMachine(machine);
 			
 		}
 		
-		
-		
-		try {
-			Thread.sleep(50);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		
 		synchronized (diner) {
 			diner.notify();

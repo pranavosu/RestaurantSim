@@ -1,8 +1,5 @@
 package managers;
 
-import java.util.List;
-
-
 import org.apache.log4j.Logger;
 
 import env.Order;
@@ -10,12 +7,11 @@ import resource.BurgerMachine;
 import resource.CokeMachine;
 import resource.FriesMachine;
 import resource.Machine;
-import threads.Diner;
 
 public class MachineManager {
 
-	Object obj = new Object();
-	
+//	Object obj = new Object();
+//	
 	BurgerMachine burgerMachine;
 	FriesMachine friesMachine;
 	CokeMachine cokeMachine;
@@ -44,26 +40,24 @@ public class MachineManager {
 
 	public Machine getAvailableMachine(Order order){
 		
-		synchronized (obj) {
-			
-			
-			if(allMachinesBusy()){
-				
-				waitForMachine();
-				
-			}
-			else{
-				
-				if(!order.areBurgersReady() && burgerMachine.isAvailable()){
+		
+				if(!order.areBurgersReady()){
 					
+					if(!burgerMachine.isAvailable())
+						waitForMachine(burgerMachine);	
 					
 					burgerMachine.setAvailable(false);
 					
 					return burgerMachine;
+			
 				}
 				
-				else if(!order.areFriesReady() && friesMachine.isAvailable())
+				else if(!order.areFriesReady())
 				{
+					
+					
+					if(!friesMachine.isAvailable())
+						waitForMachine(friesMachine);
 					
 					friesMachine.setAvailable(false);
 					
@@ -71,51 +65,58 @@ public class MachineManager {
 					
 					
 				}
-				else if(!order.isCokeReady() && cokeMachine.isAvailable()){
+				else if(!order.isCokeReady()){
+					
+					
+					if(!cokeMachine.isAvailable())
+						waitForMachine(cokeMachine);
 					
 					cokeMachine.setAvailable(false);
 					
 					return cokeMachine;
 					
 				}
-				
-			}
-		}
 		
 		
-		//TODO: null returned
 		return null;
-		
-
-		
+				
 	}
 
-	private void waitForMachine() {
+	private boolean noMachineAvailable() {
+		return !anyMachineAvailable();
+	}
+
+	private void waitForMachine(Machine m) {
 		
-		try {
-			
-			obj.wait();
-			
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		
+		synchronized (m) {
+		
+			try {
+				
+				m.wait();
+				
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		
 		}
 	}
 	
 	
 	public void releaseMachine(Machine m){
 		
-		synchronized (obj) {
+		synchronized (m) {
 			
 			m.setAvailable(true);
-			obj.notifyAll();
+			m.notifyAll();
 			
 		}
 		
 		
 	}
 
-	private boolean allMachinesBusy() {
-		return burgerMachine.isAvailable() && friesMachine.isAvailable() && cokeMachine.isAvailable();
+	private boolean anyMachineAvailable() {
+		return burgerMachine.isAvailable() || friesMachine.isAvailable() || cokeMachine.isAvailable();
 	}
 }

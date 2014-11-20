@@ -4,6 +4,7 @@ import java.util.List;
 
 import managers.CookManager;
 import managers.DinerManager;
+import managers.MachineManager;
 import managers.TableManager;
 
 import org.apache.log4j.Logger;
@@ -15,7 +16,9 @@ public class Restaurant {
 	
 	private TableManager tableMgr;
 	private DinerManager dinerMgr;
+	private MachineManager manager;
 	private CookManager cookMgr;
+	
 	private Clock clock;
 
 	public static final Logger logger = Logger.getLogger(Restaurant.class);
@@ -31,6 +34,10 @@ public class Restaurant {
 		cookMgr = CookManager.getInstance();
 		cookMgr.init(numCooks);
 		
+
+		 manager = MachineManager.getInstance();
+		 manager.init();
+		
 		clock = Clock.getInstance();
 		
 	}
@@ -43,15 +50,15 @@ public class Restaurant {
 		
 		DinerManager.getInstance().scheduleDiners();
 		
-		while(shouldRemainOpen()) {
-			
-			//dinerMgr.startDinersArrivedNow();
-			clock.increment(); 
-			
-			synchronized(clock) {
-				clock.notifyAll();
-			}
-		}
+//		while(shouldRemainOpen()) {
+//			
+//			//dinerMgr.startDinersArrivedNow();
+//			clock.increment(); 
+//			
+//			synchronized(clock) {
+//				clock.notifyAll();
+//			}
+//		}
 		
 	}
 

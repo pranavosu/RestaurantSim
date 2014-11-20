@@ -1,5 +1,6 @@
 package resource;
 
+import env.Constants;
 import env.Order;
 
 public class CokeMachine extends Machine {
@@ -14,8 +15,21 @@ public class CokeMachine extends Machine {
 	@Override
 	public
 	Order fulfil(Order o) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		for (int i = 0; i < o.getCokeCount(); i++) {
+			try {
+				Thread.sleep(1 * Constants.MINUTE_SCALING);
+				
+				
+				
+			} catch (InterruptedException e) {
+			}
+		}
+		
+		
+		o.setCokeReady(true);
+		
+		return o;
 	}
 
 	@Override

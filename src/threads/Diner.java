@@ -48,6 +48,9 @@ public class Diner implements Runnable{
 	}
 
 	private void waitForFood() {
+		
+		logger.info("Diner #"+dinerId+" is waiting for food.");
+		
 		synchronized (this) {
 			try {
 					wait();

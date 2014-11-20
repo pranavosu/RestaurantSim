@@ -1,9 +1,10 @@
 package env;
 
+
 import org.apache.log4j.Logger;
 
 public class Clock {
-	private static Clock clock = null;
+	
 	private int time;
 	private long startTime;
 	
@@ -17,12 +18,16 @@ public class Clock {
 		return time;
 	}
 	
-	public static Clock getInstance() {
-		if(clock == null) {
-			clock = new Clock();
+	//Synchronization using Init on Demand
+		private static class SingletonHolder {
+	        static final Clock instance = new Clock();
+	    }
+		
+		
+		public static Clock getInstance() {
+			
+			return SingletonHolder.instance;
 		}
-		return clock;
-	}
 	
 	public long startClock(){
 	
@@ -33,13 +38,5 @@ public class Clock {
 	
 	public void increment() {
 		
-		logger.info("Current Time : " + time);
-		
-		try {
-			Thread.sleep(50);
-		} catch(InterruptedException ie) {
-			
-		}
-		time++;
 	}
 }
