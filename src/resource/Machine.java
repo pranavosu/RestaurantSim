@@ -20,12 +20,4 @@ public abstract class Machine {
 		
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
 }

@@ -50,16 +50,6 @@ public class Restaurant {
 		
 		DinerManager.getInstance().scheduleDiners();
 		
-//		while(shouldRemainOpen()) {
-//			
-//			//dinerMgr.startDinersArrivedNow();
-//			clock.increment(); 
-//			
-//			synchronized(clock) {
-//				clock.notifyAll();
-//			}
-//		}
-		
 	}
 
 	private boolean shouldRemainOpen() {
