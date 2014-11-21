@@ -3,40 +3,26 @@ package env;
 
 import org.apache.log4j.Logger;
 
+
 public class Clock {
 	
-	private int time;
-	private long startTime;
+	private static long startTime;
 	
 	public static final Logger logger = Logger.getLogger(Clock.class);
 	
-	private Clock() {
-		time = 0;
-	}
 	
-	public int getTime() {
-		return time;
-	}
-	
-	//Synchronization using Init on Demand
-		private static class SingletonHolder {
-	        static final Clock instance = new Clock();
-	    }
-		
-		
-		public static Clock getInstance() {
-			
-			return SingletonHolder.instance;
-		}
-	
-	public long startClock(){
+	public static long startClock(){
 	
 		startTime = System.currentTimeMillis();
-		
 		return startTime;
+	
 	}
 	
-	public void increment() {
+	public static int getCurrentTime() {
 		
+		double currentTime = System.currentTimeMillis();
+		int time = (int) ((currentTime - startTime) / Constants.MINUTE_SCALING);
+		return time;
 	}
+
 }

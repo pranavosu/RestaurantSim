@@ -5,35 +5,28 @@ import env.Order;
 
 public class CokeMachine extends Machine {
 
-	@Override
-	public
-	boolean isAvailable() {
-		// TODO Auto-generated method stub
-		return isAvailable;
-	}
+	private final static int COKE_TIME = 1;
+	
 
 	@Override
 	public Order fulfil(Order o) {
 		
-		for (int i = 0; i < o.getCokeCount(); i++) {
 			try {
-				Thread.sleep(1 * Constants.MINUTE_SCALING);
-				
-				
-				
+			
+				Thread.sleep(COKE_TIME * Constants.MINUTE_SCALING);
+		
 			} catch (InterruptedException e) {
-			}
 		}
 		
-		
-		o.setCokeReady(true);
+		o.cokePrepared();
 		
 		return o;
 	}
 
-	@Override
-	public void setAvailable(boolean available) {
-		isAvailable = available;
-	}
 
+	@Override
+	public String getMachineName(){
+		
+		return "Coke-Machine";
+	}
 }

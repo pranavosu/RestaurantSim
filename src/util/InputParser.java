@@ -7,6 +7,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+
+import org.apache.log4j.Logger;
+
+import env.Constants;
 import env.Order;
 import env.ParsedInput;
 import threads.Diner;
@@ -14,6 +18,7 @@ import threads.Diner;
 public class InputParser {
 
 	
+	public static final Logger logger = Logger.getLogger(InputParser.class);
 	
 	public static ParsedInput parseRestaurantInputFile(String inputFile){
 		
@@ -38,12 +43,14 @@ public class InputParser {
 				int numberOfCooks = Integer.parseInt(line.trim());
 				parsedInput.setNumberOfCooks(numberOfCooks);
 				
-				
 				int dinerCount = 1;
 				
 				while((line=reader.readLine())!=null){
 					
 					line = line.trim();
+					
+					
+					if(line.isEmpty()) continue;
 					
 					String[] orderInfo = line.split("\\s+");
 					
@@ -52,7 +59,7 @@ public class InputParser {
 					int coke = Integer.parseInt(orderInfo[3]);
 					int arrivalTime = Integer.parseInt(orderInfo[0]);
 					
-					Order o = new Order(burgers, fries, coke, dinerCount);
+					Order o = new Order(burgers, coke, fries, dinerCount);
 					Diner d = new Diner(dinerCount++, arrivalTime, o);
 					
 					dinerList.add(d);

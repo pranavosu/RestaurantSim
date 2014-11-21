@@ -12,7 +12,6 @@ public class SimulationEngine {
 	public static void  initLogger()
 	{
 		PropertyConfigurator.configure("resources/LoggerConfig.txt");
-		logger.info("Logger initialized");
 	}
 	
 
@@ -30,7 +29,5 @@ public class SimulationEngine {
 			
 		
 	}
-
-
 	
 }

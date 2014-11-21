@@ -5,6 +5,7 @@ import managers.DinerManager;
 
 import org.apache.log4j.Logger;
 
+import env.Clock;
 import env.Constants;
 import env.Order;
 
@@ -29,7 +30,7 @@ public class Diner implements Runnable{
 		
 		
 		//TODO: Print arrive
-		logger.info("Diner #"+dinerId+" arrived at:"+arrivalTime+" seated at "+Thread.currentThread().getName());
+		logger.info("Time "+Clock.getCurrentTime()+": "+this.getName()+" arrived at "+arrivalTime+" minutes, seated on "+Thread.currentThread().getName()+".");
 		
 		
 		
@@ -37,19 +38,19 @@ public class Diner implements Runnable{
 		
 		waitForFood();
 		
+		logger.info("Time "+Clock.getCurrentTime()+": "+this.getName()+" served food.");
+		
 		eat();
 		
-		
-		//TODO Print done
-		logger.info(Thread.currentThread().getName()+" done at:"+arrivalTime+50);
+		logger.info("Time "+Clock.getCurrentTime()+": "+this.getName()+" leaves.");
 		
 		DinerManager.getInstance().getChequeAndLeave();
+		
 		
 	}
 
 	private void waitForFood() {
 		
-		logger.info("Diner #"+dinerId+" is waiting for food.");
 		
 		synchronized (this) {
 			try {
@@ -62,7 +63,6 @@ public class Diner implements Runnable{
 	
 	public void eat() {
 		
-		logger.info("Diner #"+dinerId+" is eating.");
 		
 			try {
 				Thread.sleep(30 * Constants.MINUTE_SCALING);
@@ -70,6 +70,12 @@ public class Diner implements Runnable{
 				
 				e.printStackTrace();
 			}
+	}
+	
+	public String getName(){
+		
+		return "Diner #"+dinerId;
+		
 	}
 
 	public Order getOrder() {

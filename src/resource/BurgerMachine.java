@@ -5,35 +5,27 @@ import env.Order;
 
 public class BurgerMachine extends Machine {
 
+	private final static int BURGER_TIME = 5;
 	
 	
 	@Override
-	public
-	boolean isAvailable() {
-		return isAvailable;
-	}
+	public Order fulfil(Order o) {
+		
+				try {
+					Thread.sleep(BURGER_TIME * Constants.MINUTE_SCALING);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+		
+		o.burgerPrepared();
 
-	@Override
-	public
-	Order fulfil(Order o) {
-	
-		for (int i = 0; i < o.getBurgerCount(); i++) {
-			try {
-				Thread.sleep(5 * Constants.MINUTE_SCALING);
-			} catch (InterruptedException e) {
-			}
-		}
-		
-		o.setBurgersReady(true);
-		
 		return o;
 	}
-
-	@Override
-	public
-	void setAvailable(boolean available) {
 	
-		isAvailable = available;
+	@Override
+	public String getMachineName(){
+		
+		return "Burger-Machine";
 	}
 
 }

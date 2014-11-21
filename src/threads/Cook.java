@@ -5,6 +5,7 @@ import managers.MachineManager;
 import org.apache.log4j.Logger;
 
 import resource.Machine;
+import env.Clock;
 import env.Order;
 
 public class Cook implements Runnable{
@@ -22,6 +23,9 @@ public class Cook implements Runnable{
 	@Override
 	public void run() {
 		
+		
+		logger.info("Time "+Clock.getCurrentTime()+": "+Thread.currentThread().getName() +" is cooking for "+diner.getName()+" with "+diner.getOrder().getOrderName()+".");
+		
 		Order order = this.diner.getOrder();
 		
 		if (order.getFriesCount() == 0) {
@@ -37,6 +41,8 @@ public class Cook implements Runnable{
 		while(!order.isReady()){
 			
 			Machine machine = manager.getAvailableMachine(order);
+			
+			logger.info("Time "+Clock.getCurrentTime()+": "+machine.getMachineName()+" is now working on "+diner.getOrder().getOrderName()+".");
 			
 			machine.fulfil(order);
 			

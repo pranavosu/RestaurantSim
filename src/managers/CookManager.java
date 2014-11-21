@@ -20,12 +20,10 @@ public class CookManager {
 
 	private RestaurantThreadPoolExecutor cooks;
 	
-	
 	//Synchronization using Init on Demand
 	private static class SingletonHolder {
         static final CookManager instance = new CookManager();
     }
-	
 	
 	public static CookManager getInstance() {
 		

@@ -37,7 +37,31 @@ public class Order {
 	}
 
 
+	public void burgerPrepared(){
+		
+		burgerCount--;
+		
+		if(burgerCount == 0)
+			setBurgersReady(true);
+		
+	}
+	public void friesPrepared(){
+		
+		friesCount--;
+		
+		if(friesCount == 0)
+			setFriesReady(true);
+		
+	}
 
+	public void cokePrepared(){
+		
+		cokeCount--;
+		
+		if(cokeCount == 0)
+			setCokeReady(true);
+		
+	}
 
 	public int getBurgerCount() {
 		return burgerCount;
@@ -51,13 +75,9 @@ public class Order {
 	}
 
 
-
-
 	public boolean areFriesReady() {
 		return areFriesReady;
 	}
-
-
 
 
 	public void setFriesReady(boolean areFriesReady) {
@@ -65,20 +85,14 @@ public class Order {
 	}
 
 
-
-
 	public boolean areBurgersReady() {
 		return areBurgersReady;
 	}
 
 
-
-
 	public void setBurgersReady(boolean areBurgersReady) {
 		this.areBurgersReady = areBurgersReady;
 	}
-
-
 
 
 	public boolean isCokeReady() {
@@ -95,7 +109,10 @@ public class Order {
 
 
 
-	
+	public String getOrderName(){
+		
+		return "Order #"+orderId;
+	}
 	
 	public boolean isReady(){
 		
@@ -109,6 +126,15 @@ public class Order {
 
 	public void setOrderId(int orderId) {
 		this.orderId = orderId;
+	}
+
+
+
+
+	@Override
+	public String toString() {
+		return "Order [friesCount=" + friesCount + ", burgerCount="
+				+ burgerCount + ", cokeCount=" + cokeCount + "]";
 	}
 	
 	

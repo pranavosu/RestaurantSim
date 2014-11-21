@@ -5,32 +5,27 @@ import env.Order;
 
 public class FriesMachine extends Machine {
 
-	@Override
-	public
-	boolean isAvailable() {
-		
-		return isAvailable;
-	}
+	private final static int FRIES_TIME = 3;
+	
 
 	@Override
 	public Order fulfil(Order o) {
 		
-		for (int i = 0; i < o.getFriesCount(); i++) {
 			try {
-				Thread.sleep(3 * Constants.MINUTE_SCALING);
+				Thread.sleep(FRIES_TIME * Constants.MINUTE_SCALING);
 			} catch (InterruptedException e) {
 			}
-		}
 		
-		o.setFriesReady(true);
+		o.friesPrepared();
 		
 		return o;
 	}
 
+	
 	@Override
-	public void setAvailable(boolean available) {
+	public String getMachineName(){
 		
-		isAvailable = available;
+		return "Fries-Machine";
 	}
 
 }

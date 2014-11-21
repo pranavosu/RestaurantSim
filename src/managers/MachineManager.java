@@ -48,10 +48,7 @@ public class MachineManager {
 
 			return burgerMachine;
 
-		}
-
-		else if(!order.areFriesReady())
-		{
+		}else if(!order.areFriesReady()){
 
 
 			if(!friesMachine.isAvailable())
@@ -61,9 +58,7 @@ public class MachineManager {
 
 			return friesMachine;
 
-
-		}
-		else if(!order.isCokeReady()){
+		}else if(!order.isCokeReady()){
 
 
 			if(!cokeMachine.isAvailable())
@@ -74,7 +69,6 @@ public class MachineManager {
 			return cokeMachine;
 
 		}
-
 
 		return null;
 

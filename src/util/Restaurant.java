@@ -37,29 +37,18 @@ public class Restaurant {
 		machineMgr = MachineManager.getInstance();
 		machineMgr.init();
 		
-		clock = Clock.getInstance();
-		
 	}
-	
 	
 	public void open() {	
 		
-		
-		Clock.getInstance().startClock();
+		Clock.startClock();
 		
 		DinerManager.getInstance().scheduleDiners();
 		
 	}
-
-	private boolean shouldRemainOpen() {
-		
-		return clock.getTime() <= 120 || (!dinerMgr.isRestaurantEmpty());
-	
-	}
 	
 	public static void close(){
 		
-		logger.info("Restaurant Closed");
 		System.exit(0);
 	}
 	

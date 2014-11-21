@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 
 import threads.Diner;
 import util.Restaurant;
+import env.Clock;
 import env.Constants;
 
 
@@ -79,7 +80,7 @@ public class DinerManager {
 		
 		if(isRestaurantEmpty()){
 			
-			logger.info("Last diner leaves");
+			logger.info("Time "+Clock.getCurrentTime()+": Last diner leaves.");
 			
 			Restaurant.close();
 			

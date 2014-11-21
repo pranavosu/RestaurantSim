@@ -8,8 +8,13 @@ public abstract class Machine {
 	
 	protected boolean isAvailable;
 	
-	public abstract boolean isAvailable();
-	public abstract void setAvailable(boolean available);
+	public  boolean isAvailable(){
+		return isAvailable;
+	}
+	public  void setAvailable(boolean available){
+		
+		isAvailable = available;
+	}
 	
 	public abstract Order fulfil(Order order);
 	
@@ -17,6 +22,11 @@ public abstract class Machine {
 		
 		isAvailable = true;
 		
+	}
+	
+	public String getMachineName(){
+		
+		return "Machine";
 	}
 	
 }
