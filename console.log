@@ -13,135 +13,135 @@ Time 6: Burger-Machine is now working on Order #1.
 Time 6: Burger-Machine is now working on Order #2.
 Time 6: Burger-Machine is now working on Order #3.
 Time 6: Burger-Machine is now working on Order #4.
-Time 11: Burger-Machine is now working on Order #2.
 Time 11: Burger-Machine is now working on Order #3.
-Time 11: Fries-Machine is now working on Order #1.
 Time 11: Burger-Machine is now working on Order #4.
+Time 11: Burger-Machine is now working on Order #2.
+Time 11: Fries-Machine is now working on Order #1.
 Time 14: Diner #1 served food.
 Time 14: Cook #1 is cooking for Diner #5 with Order #5.
+Time 16: Fries-Machine is now working on Order #3.
 Time 16: Burger-Machine is now working on Order #2.
 Time 16: Burger-Machine is now working on Order #5.
 Time 16: Fries-Machine is now working on Order #4.
+Time 19: Cook #3 is cooking for Diner #6 with Order #6.
+Time 19: Diner #3 served food.
 Time 19: Diner #4 served food.
-Time 19: Cook #4 is cooking for Diner #6 with Order #6.
-Time 19: Fries-Machine is now working on Order #3.
 Time 21: Burger-Machine is now working on Order #2.
-Time 21: Burger-Machine is now working on Order #5.
 Time 21: Burger-Machine is now working on Order #6.
-Time 22: Diner #3 served food.
-Time 26: Coke-Machine is now working on Order #2.
+Time 21: Burger-Machine is now working on Order #5.
 Time 26: Burger-Machine is now working on Order #6.
-Time 27: Coke-Machine is now working on Order #5.
+Time 26: Coke-Machine is now working on Order #2.
+Time 26: Coke-Machine is now working on Order #5.
 Time 27: Diner #2 served food.
-Time 28: Diner #5 served food.
+Time 27: Diner #5 served food.
 Time 31: Fries-Machine is now working on Order #6.
 Time 34: Diner #6 served food.
 Time 44: Diner #1 leaves.
 Time 44: Diner #7 arrived at 7 minutes, seated on Table #1.
-Time 44: Cook #3 is cooking for Diner #7 with Order #7.
+Time 44: Cook #4 is cooking for Diner #7 with Order #7.
 Time 44: Burger-Machine is now working on Order #7.
 Time 49: Diner #4 leaves.
+Time 49: Diner #3 leaves.
 Time 49: Diner #8 arrived at 41 minutes, seated on Table #4.
-Time 49: Cook #2 is cooking for Diner #8 with Order #8.
+Time 49: Diner #9 arrived at 42 minutes, seated on Table #3.
+Time 49: Cook #1 is cooking for Diner #8 with Order #8.
+Time 49: Cook #2 is cooking for Diner #9 with Order #9.
 Time 49: Fries-Machine is now working on Order #7.
 Time 49: Burger-Machine is now working on Order #8.
-Time 52: Diner #3 leaves.
-Time 52: Diner #9 arrived at 42 minutes, seated on Table #3.
-Time 52: Cook #1 is cooking for Diner #9 with Order #9.
+Time 49: Burger-Machine is now working on Order #9.
 Time 52: Coke-Machine is now working on Order #7.
 Time 53: Diner #7 served food.
-Time 54: Burger-Machine is now working on Order #8.
 Time 54: Burger-Machine is now working on Order #9.
+Time 57: Diner #5 leaves.
 Time 57: Diner #2 leaves.
-Time 57: Diner #10 arrived at 43 minutes, seated on Table #2.
-Time 57: Cook #4 is cooking for Diner #10 with Order #10.
-Time 58: Diner #5 leaves.
-Time 58: Diner #11 arrived at 44 minutes, seated on Table #5.
-Time 58: Cook #3 is cooking for Diner #11 with Order #11.
+Time 57: Diner #10 arrived at 43 minutes, seated on Table #5.
+Time 57: Diner #11 arrived at 44 minutes, seated on Table #2.
+Time 57: Cook #3 is cooking for Diner #10 with Order #10.
+Time 57: Cook #4 is cooking for Diner #11 with Order #11.
 Time 59: Burger-Machine is now working on Order #9.
-Time 59: Burger-Machine is now working on Order #10.
+Time 59: Burger-Machine is now working on Order #8.
 Time 59: Burger-Machine is now working on Order #11.
-Time 59: Fries-Machine is now working on Order #8.
-Time 62: Diner #8 served food.
+Time 59: Burger-Machine is now working on Order #10.
 Time 64: Diner #6 leaves.
-Time 64: Burger-Machine is now working on Order #11.
-Time 64: Burger-Machine is now working on Order #10.
-Time 64: Burger-Machine is now working on Order #9.
 Time 64: Diner #12 arrived at 45 minutes, seated on Table #6.
-Time 64: Cook #2 is cooking for Diner #12 with Order #12.
+Time 64: Fries-Machine is now working on Order #8.
+Time 64: Burger-Machine is now working on Order #9.
+Time 64: Burger-Machine is now working on Order #10.
+Time 67: Diner #8 served food.
+Time 67: Cook #1 is cooking for Diner #12 with Order #12.
+Time 69: Fries-Machine is now working on Order #10.
+Time 69: Burger-Machine is now working on Order #11.
 Time 69: Burger-Machine is now working on Order #12.
-Time 69: Fries-Machine is now working on Order #11.
-Time 70: Burger-Machine is now working on Order #9.
-Time 73: Fries-Machine is now working on Order #10.
-Time 73: Diner #11 served food.
-Time 74: Burger-Machine is now working on Order #12.
-Time 75: Coke-Machine is now working on Order #9.
-Time 76: Diner #9 served food.
-Time 76: Diner #10 served food.
-Time 79: Coke-Machine is now working on Order #12.
+Time 69: Coke-Machine is now working on Order #9.
+Time 71: Diner #9 served food.
+Time 73: Diner #10 served food.
+Time 75: Burger-Machine is now working on Order #12.
+Time 75: Fries-Machine is now working on Order #11.
+Time 78: Diner #11 served food.
+Time 80: Coke-Machine is now working on Order #12.
 Time 81: Diner #12 served food.
 Time 83: Diner #7 leaves.
 Time 83: Diner #13 arrived at 46 minutes, seated on Table #1.
-Time 83: Cook #3 is cooking for Diner #13 with Order #13.
+Time 83: Cook #2 is cooking for Diner #13 with Order #13.
 Time 83: Burger-Machine is now working on Order #13.
 Time 88: Burger-Machine is now working on Order #13.
-Time 93: Diner #8 leaves.
-Time 93: Diner #14 arrived at 47 minutes, seated on Table #4.
-Time 93: Cook #1 is cooking for Diner #14 with Order #14.
-Time 94: Fries-Machine is now working on Order #13.
-Time 94: Burger-Machine is now working on Order #14.
-Time 97: Diner #13 served food.
-Time 99: Fries-Machine is now working on Order #14.
-Time 102: Coke-Machine is now working on Order #14.
-Time 103: Diner #14 served food.
-Time 103: Diner #11 leaves.
-Time 103: Diner #15 arrived at 81 minutes, seated on Table #5.
-Time 103: Cook #4 is cooking for Diner #15 with Order #15.
+Time 93: Fries-Machine is now working on Order #13.
+Time 96: Diner #13 served food.
+Time 98: Diner #8 leaves.
+Time 98: Diner #14 arrived at 47 minutes, seated on Table #4.
+Time 98: Cook #3 is cooking for Diner #14 with Order #14.
+Time 98: Burger-Machine is now working on Order #14.
+Time 101: Diner #9 leaves.
+Time 101: Diner #15 arrived at 81 minutes, seated on Table #3.
+Time 101: Cook #4 is cooking for Diner #15 with Order #15.
+Time 103: Fries-Machine is now working on Order #14.
 Time 103: Burger-Machine is now working on Order #15.
-Time 106: Diner #9 leaves.
-Time 106: Diner #16 arrived at 82 minutes, seated on Table #3.
-Time 106: Cook #2 is cooking for Diner #16 with Order #16.
-Time 106: Diner #10 leaves.
-Time 106: Diner #17 arrived at 83 minutes, seated on Table #2.
-Time 106: Cook #3 is cooking for Diner #17 with Order #17.
+Time 103: Diner #10 leaves.
+Time 103: Diner #16 arrived at 82 minutes, seated on Table #5.
+Time 103: Cook #1 is cooking for Diner #16 with Order #16.
+Time 106: Coke-Machine is now working on Order #14.
+Time 107: Diner #14 served food.
 Time 108: Burger-Machine is now working on Order #15.
-Time 108: Burger-Machine is now working on Order #17.
 Time 108: Burger-Machine is now working on Order #16.
+Time 108: Diner #11 leaves.
+Time 108: Diner #17 arrived at 83 minutes, seated on Table #2.
+Time 108: Cook #2 is cooking for Diner #17 with Order #17.
 Time 111: Diner #12 leaves.
 Time 111: Diner #18 arrived at 84 minutes, seated on Table #6.
-Time 111: Cook #1 is cooking for Diner #18 with Order #18.
-Time 113: Burger-Machine is now working on Order #17.
-Time 113: Fries-Machine is now working on Order #15.
-Time 113: Burger-Machine is now working on Order #18.
+Time 111: Cook #3 is cooking for Diner #18 with Order #18.
 Time 113: Burger-Machine is now working on Order #16.
+Time 113: Burger-Machine is now working on Order #17.
+Time 113: Burger-Machine is now working on Order #18.
+Time 113: Fries-Machine is now working on Order #15.
 Time 116: Diner #15 served food.
-Time 118: Fries-Machine is now working on Order #17.
+Time 118: Burger-Machine is now working on Order #18.
 Time 118: Burger-Machine is now working on Order #16.
-Time 121: Diner #17 served food.
+Time 118: Burger-Machine is now working on Order #17.
 Time 123: Burger-Machine is now working on Order #16.
-Time 123: Burger-Machine is now working on Order #18.
+Time 123: Fries-Machine is now working on Order #18.
+Time 123: Fries-Machine is now working on Order #17.
+Time 126: Diner #17 served food.
+Time 126: Diner #18 served food.
 Time 127: Diner #13 leaves.
 Time 127: Diner #19 arrived at 85 minutes, seated on Table #1.
 Time 127: Cook #4 is cooking for Diner #19 with Order #19.
-Time 128: Fries-Machine is now working on Order #18.
-Time 128: Burger-Machine is now working on Order #19.
 Time 128: Coke-Machine is now working on Order #16.
+Time 128: Burger-Machine is now working on Order #19.
 Time 129: Diner #16 served food.
-Time 131: Diner #18 served food.
-Time 133: Diner #14 leaves.
-Time 133: Diner #20 arrived at 86 minutes, seated on Table #4.
-Time 133: Cook #3 is cooking for Diner #20 with Order #20.
 Time 133: Burger-Machine is now working on Order #19.
-Time 133: Burger-Machine is now working on Order #20.
-Time 139: Coke-Machine is now working on Order #19.
-Time 139: Burger-Machine is now working on Order #20.
-Time 140: Diner #19 served food.
-Time 144: Fries-Machine is now working on Order #20.
+Time 137: Diner #14 leaves.
+Time 137: Diner #20 arrived at 86 minutes, seated on Table #4.
+Time 137: Cook #3 is cooking for Diner #20 with Order #20.
+Time 138: Burger-Machine is now working on Order #20.
+Time 138: Coke-Machine is now working on Order #19.
+Time 139: Diner #19 served food.
+Time 143: Burger-Machine is now working on Order #20.
 Time 146: Diner #15 leaves.
-Time 147: Diner #20 served food.
-Time 151: Diner #17 leaves.
-Time 160: Diner #16 leaves.
-Time 162: Diner #18 leaves.
-Time 170: Diner #19 leaves.
-Time 177: Diner #20 leaves.
-Time 177: Last diner leaves.
+Time 148: Fries-Machine is now working on Order #20.
+Time 151: Diner #20 served food.
+Time 156: Diner #17 leaves.
+Time 156: Diner #18 leaves.
+Time 159: Diner #16 leaves.
+Time 169: Diner #19 leaves.
+Time 181: Diner #20 leaves.
+Time 181: Last diner leaves.

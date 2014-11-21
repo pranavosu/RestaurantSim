@@ -1,4 +1,4 @@
-package util;
+package environment;
 
 import java.util.List;
 
@@ -10,7 +10,6 @@ import managers.TableManager;
 import org.apache.log4j.Logger;
 
 import threads.Diner;
-import env.Clock;
 
 public class Restaurant {
 	

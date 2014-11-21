@@ -1,6 +1,6 @@
 package resource;
 
-import env.Order;
+import environment.Order;
 
 public abstract class Machine {
 

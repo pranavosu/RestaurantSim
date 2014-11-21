@@ -2,7 +2,7 @@ package managers;
 
 import org.apache.log4j.Logger;
 
-import env.Order;
+import environment.Order;
 import resource.BurgerMachine;
 import resource.CokeMachine;
 import resource.FriesMachine;

@@ -5,9 +5,9 @@ import managers.DinerManager;
 
 import org.apache.log4j.Logger;
 
-import env.Clock;
-import env.Constants;
-import env.Order;
+import util.Constants;
+import environment.Clock;
+import environment.Order;
 
 public class Diner implements Runnable{
 
@@ -29,10 +29,7 @@ public class Diner implements Runnable{
 	public void run() {
 		
 		
-		//TODO: Print arrive
 		logger.info("Time "+Clock.getCurrentTime()+": "+this.getName()+" arrived at "+arrivalTime+" minutes, seated on "+Thread.currentThread().getName()+".");
-		
-		
 		
 		CookManager.getInstance().takeOrder(this);
 		

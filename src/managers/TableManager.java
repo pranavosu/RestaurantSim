@@ -7,7 +7,7 @@ import org.apache.log4j.Logger;
 
 import pools.RestaurantThreadPoolExecutor;
 import threads.Diner;
-import env.Constants;
+import util.Constants;
 
 public class TableManager {
 	

@@ -8,9 +8,9 @@ import java.util.TimerTask;
 import org.apache.log4j.Logger;
 
 import threads.Diner;
-import util.Restaurant;
-import env.Clock;
-import env.Constants;
+import util.Constants;
+import environment.Clock;
+import environment.Restaurant;
 
 
 public class DinerManager {

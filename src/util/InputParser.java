@@ -7,12 +7,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
 import org.apache.log4j.Logger;
 
-import env.Constants;
-import env.Order;
-import env.ParsedInput;
+import environment.Order;
+import environment.ParsedInput;
 import threads.Diner;
 
 public class InputParser {

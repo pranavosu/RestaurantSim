@@ -5,8 +5,8 @@ import managers.MachineManager;
 import org.apache.log4j.Logger;
 
 import resource.Machine;
-import env.Clock;
-import env.Order;
+import environment.Clock;
+import environment.Order;
 
 public class Cook implements Runnable{
 

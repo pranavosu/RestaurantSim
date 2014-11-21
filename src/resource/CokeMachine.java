@@ -1,7 +1,7 @@
 package resource;
 
-import env.Constants;
-import env.Order;
+import util.Constants;
+import environment.Order;
 
 public class CokeMachine extends Machine {
 

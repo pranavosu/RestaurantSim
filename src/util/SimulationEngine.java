@@ -3,7 +3,8 @@ package util;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-import env.ParsedInput;
+import environment.ParsedInput;
+import environment.Restaurant;
 
 public class SimulationEngine {
 	

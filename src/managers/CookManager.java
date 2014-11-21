@@ -8,8 +8,8 @@ import org.apache.log4j.Logger;
 import pools.RestaurantThreadPoolExecutor;
 import threads.Cook;
 import threads.Diner;
-import env.Constants;
-import env.Order;
+import util.Constants;
+import environment.Order;
 
 
 public class CookManager {
