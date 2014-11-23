@@ -13,7 +13,7 @@ public class MachineManager {
 	BurgerMachine burgerMachine;
 	FriesMachine friesMachine;
 	CokeMachine cokeMachine;
-
+	
 
 	public static final Logger logger = Logger.getLogger(MachineManager.class);
 
@@ -28,7 +28,7 @@ public class MachineManager {
 		friesMachine = new FriesMachine();
 		cokeMachine = new CokeMachine();
 	}
-
+	
 	public static MachineManager getInstance() {
 
 		return SingletonHolder.instance;
@@ -41,33 +41,39 @@ public class MachineManager {
 
 		if(!order.areBurgersReady()){
 
-			if(!burgerMachine.isAvailable())
-				waitForMachine(burgerMachine);	
-
-			burgerMachine.setAvailable(false);
-
-			return burgerMachine;
-
+			synchronized (burgerMachine) {
+				
+				if(!burgerMachine.isAvailable())
+				{
+					waitForMachine(burgerMachine);	
+				}
+				burgerMachine.setAvailable(false);
+				return burgerMachine;
+			}
+			
 		}else if(!order.areFriesReady()){
 
-
-			if(!friesMachine.isAvailable())
-				waitForMachine(friesMachine);
-
-			friesMachine.setAvailable(false);
-
-			return friesMachine;
-
+			synchronized (friesMachine) {
+				
+				if(!friesMachine.isAvailable())
+					waitForMachine(friesMachine);
+	
+				friesMachine.setAvailable(false);
+					
+				return friesMachine;
+			}
+			
 		}else if(!order.isCokeReady()){
 
-
-			if(!cokeMachine.isAvailable())
-				waitForMachine(cokeMachine);
-
-			cokeMachine.setAvailable(false);
-
-			return cokeMachine;
-
+			synchronized (cokeMachine) {
+				
+				if(!cokeMachine.isAvailable())
+					waitForMachine(cokeMachine);
+					
+				cokeMachine.setAvailable(false);
+				
+				return cokeMachine;
+			}
 		}
 
 		return null;
@@ -78,7 +84,10 @@ public class MachineManager {
 
 		synchronized (m) {
 			try {
-				m.wait();
+				
+				while(!m.isAvailable())
+					m.wait();
+				
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -91,13 +100,11 @@ public class MachineManager {
 		synchronized (m) {
 
 			m.setAvailable(true);
-			m.notifyAll();
+			m.notify();
 
 		}
 
-
 	}
-
 	
 	private boolean noMachineAvailable() {
 		return !anyMachineAvailable();

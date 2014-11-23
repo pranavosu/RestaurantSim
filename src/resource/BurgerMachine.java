@@ -1,12 +1,12 @@
 package resource;
 
 import util.Constants;
+import environment.Clock;
 import environment.Order;
 
 public class BurgerMachine extends Machine {
 
 	private final static int BURGER_TIME = 5;
-	
 	
 	@Override
 	public Order fulfil(Order o) {
@@ -18,7 +18,7 @@ public class BurgerMachine extends Machine {
 				}
 		
 		o.burgerPrepared();
-
+	
 		return o;
 	}
 	

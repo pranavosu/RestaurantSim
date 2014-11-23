@@ -57,10 +57,8 @@ public class DinerManager {
 
 				@Override
 				public void run() {
-			
 					diner.getOrder().setOrderId(orderCount++);
 					manager.queueDiner(diner);
-				
 				}
 			};
 			
@@ -69,9 +67,7 @@ public class DinerManager {
 			timer.schedule(timerTask, diner.getArrivalTime()
 					* Constants.MINUTE_SCALING);
 			
-			
-		}
-		
+		}	
 	}
 	
 	public void getChequeAndLeave(){

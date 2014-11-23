@@ -18,8 +18,6 @@ public class Restaurant {
 	private MachineManager machineMgr;
 	private CookManager cookMgr;
 	
-	private Clock clock;
-
 	public static final Logger logger = Logger.getLogger(Restaurant.class);
 	
 	public Restaurant(int numTables, int numCooks, int numDiners, List<Diner> diners) {
@@ -41,7 +39,6 @@ public class Restaurant {
 	public void open() {	
 		
 		Clock.startClock();
-		
 		DinerManager.getInstance().scheduleDiners();
 		
 	}
