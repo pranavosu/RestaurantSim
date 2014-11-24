@@ -45,8 +45,8 @@ public class Cook implements Runnable{
 			logger.info("Time "+Clock.getCurrentTime()+": "+machine.getMachineName()+" is now working on "+diner.getOrder().getOrderName()+".");
 			
 			machine.fulfil(order);
-			
 			manager.releaseMachine(machine);
+			
 			
 		}
 		

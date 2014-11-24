@@ -12,15 +12,21 @@ public class SimulationEngine {
 	
 	public static void  initLogger()
 	{
-		PropertyConfigurator.configure("resources/LoggerConfig.txt");
+		PropertyConfigurator.configure("log4j.properties");
 	}
 	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		initLogger();
+		//initLogger();
 		
+		
+		if(args.length == 0){
+			
+			logger.info("Run jar file using: java -jar Sim.jar <TestDataFile>");
+			System.exit(0);
+		}
 		ParsedInput pi = InputParser.parseRestaurantInputFile(args[0]);
 		
 		Restaurant restaurant = new Restaurant(pi.getNumberOfTables(), pi.getNumberOfCooks(),
@@ -28,7 +34,6 @@ public class SimulationEngine {
 		
 		restaurant.open();
 			
-		
 	}
 	
 }

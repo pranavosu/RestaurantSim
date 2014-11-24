@@ -2,6 +2,7 @@ package managers;
 
 import org.apache.log4j.Logger;
 
+import environment.Clock;
 import environment.Order;
 import resource.BurgerMachine;
 import resource.CokeMachine;
@@ -13,6 +14,7 @@ public class MachineManager {
 	BurgerMachine burgerMachine;
 	FriesMachine friesMachine;
 	CokeMachine cokeMachine;
+	
 	
 
 	public static final Logger logger = Logger.getLogger(MachineManager.class);
@@ -38,15 +40,21 @@ public class MachineManager {
 
 	public Machine getAvailableMachine(Order order){
 
+		
 
 		if(!order.areBurgersReady()){
 
 			synchronized (burgerMachine) {
 				
+				//logger.info(Thread.currentThread().getName()+" entered");
 				if(!burgerMachine.isAvailable())
 				{
+					//logger.info(Thread.currentThread().getName()+ " waiting for burger machine.");
 					waitForMachine(burgerMachine);	
+					//logger.info(Thread.currentThread().getName()+ " stopped waiting for burger machine.");
 				}
+				
+				//logger.info(Thread.currentThread().getName()+ " got burger machine.");
 				burgerMachine.setAvailable(false);
 				return burgerMachine;
 			}
@@ -82,7 +90,7 @@ public class MachineManager {
 
 	private void waitForMachine(Machine m) {
 
-		synchronized (m) {
+		//synchronized (m) {
 			try {
 				
 				while(!m.isAvailable())
@@ -92,7 +100,7 @@ public class MachineManager {
 				e.printStackTrace();
 			}
 		}
-	}
+	//}
 
 
 	public void releaseMachine(Machine m){
@@ -100,7 +108,8 @@ public class MachineManager {
 		synchronized (m) {
 
 			m.setAvailable(true);
-			m.notify();
+			m.notifyAll();
+			logger.info("Time "+Clock.getCurrentTime()+": "+Thread.currentThread().getName()+" released "+m.getMachineName());
 
 		}
 

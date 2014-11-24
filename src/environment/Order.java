@@ -41,7 +41,7 @@ public class Order {
 		
 		burgerCount--;
 		
-		if(burgerCount == 0)
+		if(burgerCount <= 0)
 			setBurgersReady(true);
 		
 	}
@@ -49,7 +49,7 @@ public class Order {
 		
 		friesCount--;
 		
-		if(friesCount == 0)
+		if(friesCount <= 0)
 			setFriesReady(true);
 		
 	}
@@ -58,7 +58,7 @@ public class Order {
 		
 		cokeCount--;
 		
-		if(cokeCount == 0)
+		if(cokeCount <= 0)
 			setCokeReady(true);
 		
 	}

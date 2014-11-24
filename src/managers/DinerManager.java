@@ -57,8 +57,13 @@ public class DinerManager {
 
 				@Override
 				public void run() {
+					
+					synchronized (manager) {
+					
 					diner.getOrder().setOrderId(orderCount++);
 					manager.queueDiner(diner);
+					
+					}
 				}
 			};
 			
